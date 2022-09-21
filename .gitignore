@@ -13,3 +13,4 @@ Screenshots/
 # Directory created when migrating from an old storage format
 # No need to synchronize
 .core_backup/
+UserSettings/Sino.pbt
