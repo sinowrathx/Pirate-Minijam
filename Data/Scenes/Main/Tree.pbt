@@ -16,7 +16,7 @@ Objects {
   }
   ChildIds: 9086936746104183945
   ChildIds: 16813558807825262224
-  ChildIds: 10005074784157121906
+  ChildIds: 11247057359057031938
   ChildIds: 5343249510736830432
   ChildIds: 8477420766962451463
   ChildIds: 11855153401888686476
@@ -392,14 +392,9 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 10005074784157121906
-  Name: "Default Sky"
+  Id: 11247057359057031938
+  Name: "Sky Core default"
   Transform {
-    Location {
-      Z: 700
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -407,10 +402,12 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 13551641546322277000
-  ChildIds: 7155168770677928712
-  ChildIds: 10505154200474359396
   ChildIds: 12837847147646642449
+  ChildIds: 1516877485769098706
+  ChildIds: 16725438662580302770
+  ChildIds: 9729313978791016468
+  ChildIds: 12312176975964298488
+  ChildIds: 8467046040818113912
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -425,16 +422,25 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 11247057359057031938
+    SubobjectId: 15742431864397169539
+    InstanceId: 13053279454886742347
+    TemplateId: 16235192961130877953
+    WasRoot: true
+  }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 12837847147646642449
-  Name: "Motion Blur Post Process"
+  Id: 8467046040818113912
+  Name: "Skylight"
   Transform {
     Location {
+      X: -1616.93579
+      Y: 533.975403
     }
     Rotation {
     }
@@ -444,11 +450,61 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10005074784157121906
+  ParentId: 11247057359057031938
   UnregisteredParameters {
     Overrides {
-      Name: "bp:Intensity"
+      Name: "bp:Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Occlusion Contrast"
       Float: 0
+    }
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Lower Hemisphere Color"
+      Color {
+        R: 0.0666259378
+        G: 0.0307134502
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Occlusion Tint"
+      Color {
+        R: 0.0274509825
+        G: 0.0274509825
+        B: 0.0392156877
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Occlusion Exponent"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Cast Volumetric Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Tint Color"
+      Color {
+        R: 0.502886474
+        G: 0.48514995
+        B: 0.752942204
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Captured Sky"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -460,28 +516,31 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
   Blueprint {
     BlueprintAsset {
-      Id: 12870561802847777983
+      Id: 11515840070784317904
     }
-    TeamSettings {
-    }
+  }
+  InstanceHistory {
+    SelfId: 8467046040818113912
+    SubobjectId: 3741704899867561465
+    InstanceId: 13053279454886742347
+    TemplateId: 16235192961130877953
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 10505154200474359396
-  Name: "Sun Light"
+  Id: 12312176975964298488
+  Name: "Sky Dome"
   Transform {
     Location {
+      X: -1616.93579
+      Y: 533.975403
     }
     Rotation {
-      Pitch: -45.8452454
-      Yaw: 33.9371338
-      Roll: 8.92731857
     }
     Scale {
       X: 1
@@ -489,7 +548,155 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10005074784157121906
+  ParentId: 11247057359057031938
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Zenith Color"
+      Color {
+        R: 0.0243181027
+        G: 0.0633459464
+        B: 0.212230757
+        A: 0.886000037
+      }
+    }
+    Overrides {
+      Name: "bp:Horizon Color"
+      Color {
+        R: 0.489468127
+        G: 0.480969489
+        B: 0.623960376
+        A: 0.895000041
+      }
+    }
+    Overrides {
+      Name: "bp:Haze Color"
+      Color {
+        R: 1
+        G: 0.225165546
+        B: 0.100000024
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Use Sun Color for Cloud Color"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Cloud Ambient Brightness"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Cloud Rim Brightness"
+      Float: 50
+    }
+    Overrides {
+      Name: "bp:Cloud Opacity"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cloud Ambient Color"
+      Color {
+        R: 2
+        G: 2
+        B: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Cloud Color"
+      Color {
+        R: 2
+        G: 2
+        B: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Cloud Shape"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Cloud Lighting Brightness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Cloud Wisp Opacity"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "bp:Cloud Speed"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Brightness"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Background Clouds"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:High Cloud Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:High Cloud Opacity"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:High Cloud Noise Amount"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:High Cloud Noise Scale"
+      Float: 0.2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7887238662729938253
+    }
+  }
+  InstanceHistory {
+    SelfId: 12312176975964298488
+    SubobjectId: 17055249375078304889
+    InstanceId: 13053279454886742347
+    TemplateId: 16235192961130877953
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 9729313978791016468
+  Name: "Sun Light"
+  Transform {
+    Location {
+      X: -1616.93579
+      Y: 533.975403
+    }
+    Rotation {
+      Pitch: -30.991209
+      Yaw: 36.6225281
+      Roll: 7.24395
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11247057359057031938
   UnregisteredParameters {
     Overrides {
       Name: "bp:Use Temperature"
@@ -573,14 +780,20 @@ Objects {
       Id: 16910278292812118833
     }
   }
+  InstanceHistory {
+    SelfId: 9729313978791016468
+    SubobjectId: 13936598814362314901
+    InstanceId: 13053279454886742347
+    TemplateId: 16235192961130877953
+  }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 7155168770677928712
-  Name: "Skylight"
+  Id: 16725438662580302770
+  Name: "Tonemapping Post Process"
   Transform {
     Location {
     }
@@ -592,57 +805,129 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10005074784157121906
+  ParentId: 11247057359057031938
   UnregisteredParameters {
     Overrides {
-      Name: "bp:Index"
-      Int: 3
+      Name: "bp:Slope"
+      Float: 1
     }
     Overrides {
-      Name: "bp:Occlusion Contrast"
+      Name: "bp:Toe"
+      Float: 0.65
+    }
+    Overrides {
+      Name: "bp:Black Clip"
       Float: 0
     }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12835657090927794006
+    }
+    TeamSettings {
+    }
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 1516877485769098706
+  Name: "Advanced Sketch Line Post Process"
+  Transform {
+    Location {
+      Z: 700
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11247057359057031938
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Background Color"
+      Color {
+        R: 1
+        G: 0.919531941
+        B: 0.734426
+      }
+    }
+    Overrides {
+      Name: "bp:Show Line Width Controls"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Show Depth Fade Controls"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Show Threshold Controls"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Highlight Threshold"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Contour Threshold"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 454480631094615022
+    }
+    TeamSettings {
+    }
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 12837847147646642449
+  Name: "Motion Blur Post Process"
+  Transform {
+    Location {
+      Z: 700
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11247057359057031938
+  UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
-      Float: 3
-    }
-    Overrides {
-      Name: "bp:Lower Hemisphere Color"
-      Color {
-        R: 0.0666259378
-        G: 0.0307134502
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Occlusion Tint"
-      Color {
-        R: 0.0274509825
-        G: 0.0274509825
-        B: 0.0392156877
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Occlusion Exponent"
-      Float: 0.4
-    }
-    Overrides {
-      Name: "bp:Cast Shadows"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Cast Volumetric Shadows"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Tint Color"
-      Color {
-        R: 0.502886474
-        G: 0.48514995
-        B: 0.752942204
-        A: 1
-      }
+      Float: 0
     }
   }
   Collidable_v2 {
@@ -654,155 +939,15 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11515840070784317904
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 13551641546322277000
-  Name: "Sky Dome"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10005074784157121906
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Zenith Color"
-      Color {
-        G: 0.0247681383
-        B: 0.169999957
-        A: 0.886000037
-      }
-    }
-    Overrides {
-      Name: "bp:Horizon Color"
-      Color {
-        G: 0.0343046486
-        B: 0.74
-        A: 0.895000041
-      }
-    }
-    Overrides {
-      Name: "bp:Haze Color"
-      Color {
-        G: 0.277218521
-        B: 0.909999967
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Use Sun Color for Cloud Color"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Cloud Ambient Brightness"
-      Float: 3
-    }
-    Overrides {
-      Name: "bp:Cloud Rim Brightness"
-      Float: 50
-    }
-    Overrides {
-      Name: "bp:Cloud Opacity"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Cloud Ambient Color"
-      Color {
-        R: 2
-        G: 2
-        B: 2
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Cloud Color"
-      Color {
-        R: 2
-        G: 2
-        B: 2
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Cloud Shape"
-      Int: 4
-    }
-    Overrides {
-      Name: "bp:Cloud Lighting Brightness"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Cloud Wisp Opacity"
-      Float: 0.4
-    }
-    Overrides {
-      Name: "bp:Cloud Speed"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Brightness"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Background Clouds"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:High Cloud Index"
-      Int: 2
-    }
-    Overrides {
-      Name: "bp:High Cloud Opacity"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:High Cloud Noise Amount"
-      Float: 0.1
-    }
-    Overrides {
-      Name: "bp:High Cloud Noise Scale"
-      Float: 0.2
-    }
-    Overrides {
-      Name: "bp:Haze Falloff"
-      Float: 10.2380199
-    }
-    Overrides {
-      Name: "bp:Horizon Falloff"
-      Float: 6
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Blueprint {
     BlueprintAsset {
-      Id: 7887238662729938253
+      Id: 12870561802847777983
     }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
+    TeamSettings {
+    }
   }
   IsReplicationEnabledByDefault: true
 }

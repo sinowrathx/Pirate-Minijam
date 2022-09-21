@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12835657090927794006
+  Name: "Tonemapping Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_tonemapping"
+  }
+}
+Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6
@@ -41,5 +50,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_4m_001"
+  }
+}
+Assets {
+  Id: 454480631094615022
+  Name: "Advanced Sketch Line Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_ppm_sketchline"
   }
 }
