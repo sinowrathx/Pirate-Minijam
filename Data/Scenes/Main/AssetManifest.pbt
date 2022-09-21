@@ -8,21 +8,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13304918237259959461
-  Name: "Sand Waves 01"
-  PlatformAssetType: 2
+  Id: 12870561802847777983
+  Name: "Motion Blur Post Process"
+  PlatformAssetType: 20
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_sand_waves_001_uv_ref"
-  }
-}
-Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_advanced_motion_blur"
   }
 }
 Assets {

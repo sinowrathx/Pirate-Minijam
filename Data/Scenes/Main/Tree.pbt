@@ -287,7 +287,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 8451732469506909205
-  ChildIds: 14982843161775482339
+  ChildIds: 1054752019233634531
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -309,65 +309,37 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 14982843161775482339
-  Name: "Tile"
+  Id: 1054752019233634531
+  Name: "Tile1"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
-      X: 50
-      Y: 50
+      X: 1
+      Y: 1
       Z: 1
     }
   }
   ParentId: 5343249510736830432
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13304918237259959461
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9912483276150761006
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tile1"
+        }
       }
     }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
+    TemplateAsset {
+      Id: 10483868285752853608
     }
   }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8451732469506909205
   Name: "Water"
   Transform {
     Location {
+      Z: 45
     }
     Rotation {
     }
@@ -438,6 +410,7 @@ Objects {
   ChildIds: 13551641546322277000
   ChildIds: 7155168770677928712
   ChildIds: 10505154200474359396
+  ChildIds: 12837847147646642449
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -454,6 +427,48 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 12837847147646642449
+  Name: "Motion Blur Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10005074784157121906
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12870561802847777983
+    }
+    TeamSettings {
+    }
   }
   IsReplicationEnabledByDefault: true
 }
