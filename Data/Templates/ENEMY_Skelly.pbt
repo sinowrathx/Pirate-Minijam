@@ -108,7 +108,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Team"
-            Int: 2
+            Int: 99
           }
           Overrides {
             Name: "cs:CurrentState"
@@ -116,7 +116,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Armor"
-            Float: 50
+            Float: 0
           }
           Overrides {
             Name: "cs:Team:tooltip"
@@ -490,7 +490,7 @@ Assets {
         }
         DamageableObject {
           DamageSettings {
-            MaxHitpoints: 400
+            MaxHitpoints: 25
             StartingHitpoints: 500
             DestroyOnDeath: true
             DestroyOnDeathDelay: 10
@@ -667,11 +667,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 20
+            Int: 5
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 20
+            Float: 5
           }
           Overrides {
             Name: "cs:ProjectileBody"
@@ -833,6 +833,18 @@ Assets {
         }
         ParentId: 4822316769612151235
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:MaxArmor"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:RegenPerSecond"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:RegenDelay"
+            Float: 0
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

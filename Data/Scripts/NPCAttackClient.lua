@@ -49,7 +49,8 @@ end
 
 
 function OnDamaged(_, _)
-	SpawnAsset(DAMAGE_FX, script:GetWorldPosition(), script:GetWorldRotation())
+
+	SpawnAsset(DAMAGE_FX, script:GetWorldPosition(), script:GetWorldRotation())	
 end
 ROOT.damagedEvent:Connect(OnDamaged)
 

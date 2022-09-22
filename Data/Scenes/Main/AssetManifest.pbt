@@ -170,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1953844252455219690
+  Name: "Londrina Solid Black"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "LondrinaSolidBlack_ref"
+  }
+}
+Assets {
   Id: 454480631094615022
   Name: "Advanced Sketch Line Post Process"
   PlatformAssetType: 20
