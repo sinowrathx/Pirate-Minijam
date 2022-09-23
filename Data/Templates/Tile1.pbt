@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 5343249510736830432
+        ChildIds: 4530947090327827825
         ChildIds: 1784703903637858991
         ChildIds: 17391600345216185585
         ChildIds: 5144861858689687228
@@ -52,6 +53,85 @@ Assets {
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 4530947090327827825
+        Name: "Advanced Sketch Line Post Process"
+        Transform {
+          Location {
+            Z: 800
+          }
+          Rotation {
+          }
+          Scale {
+            X: 100
+            Y: 50
+            Z: 15
+          }
+        }
+        ParentId: 9912483276150761006
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Background Color"
+            Color {
+              R: 1
+              G: 0.919531941
+              B: 0.734426
+            }
+          }
+          Overrides {
+            Name: "bp:Show Line Width Controls"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Show Depth Fade Controls"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Show Threshold Controls"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Highlight Threshold"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Contour Threshold"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Highlight Line Width"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Unbounded"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Blend Radius"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 454480631094615022
+          }
+          TeamSettings {
+          }
         }
         IsReplicationEnabledByDefault: true
       }
@@ -12545,6 +12625,15 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
         IsReplicationEnabledByDefault: true
+      }
+    }
+    Assets {
+      Id: 454480631094615022
+      Name: "Advanced Sketch Line Post Process"
+      PlatformAssetType: 20
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_ppm_sketchline"
       }
     }
     Assets {

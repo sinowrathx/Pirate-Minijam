@@ -28,15 +28,14 @@ Assets {
           Overrides {
             Name: "cs:EquipmentIcon"
             AssetReference {
-              Id: 15201232689808388272
+              Id: 1786116283803634609
             }
           }
           Overrides {
             Name: "cs:EquipmentColor"
             Color {
-              R: 0.13
-              G: 0.429602444
-              B: 1
+              G: 0.288079083
+              B: 0.75
               A: 1
             }
           }
@@ -1324,15 +1323,6 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
         IsReplicationEnabledByDefault: true
-      }
-    }
-    Assets {
-      Id: 15201232689808388272
-      Name: "Icon Weapon Sword"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_WeaponSword"
       }
     }
     PrimaryAssetId {

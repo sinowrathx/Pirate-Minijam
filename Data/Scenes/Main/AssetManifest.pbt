@@ -152,6 +152,24 @@ Assets {
   }
 }
 Assets {
+  Id: 5288005608896082047
+  Name: "Survival Crossbow 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Weapon_Crossbow_001"
+  }
+}
+Assets {
+  Id: 5210682014710167866
+  Name: "Fantasy Boot 014"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Boot_014"
+  }
+}
+Assets {
   Id: 5017035769320607785
   Name: "Fantasy Coins 005"
   PlatformAssetType: 9
@@ -188,11 +206,11 @@ Assets {
   }
 }
 Assets {
-  Id: 454480631094615022
-  Name: "Advanced Sketch Line Post Process"
-  PlatformAssetType: 20
+  Id: 796189722110714046
+  Name: "Fantasy Ale 002"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_ppm_sketchline"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Food_Ale_002"
   }
 }
