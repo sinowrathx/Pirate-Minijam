@@ -16,7 +16,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:IsCursorVisible"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:IsCursorVisible:tooltip"
@@ -158,6 +158,7 @@ Objects {
     }
   }
   ParentId: 10418776655865776143
+  ChildIds: 69521965052815437
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -195,6 +196,57 @@ Objects {
     SubobjectId: 2822726097171685260
     InstanceId: 7038640141410074373
     TemplateId: 128133215436933668
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 69521965052815437
+  Name: "CameraShake"
+  Transform {
+    Location {
+      X: -138.231689
+      Y: 15.5741425
+      Z: -474.232178
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13087787533558536806
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ShakePower"
+      Float: 3
+    }
+    Overrides {
+      Name: "cs:Frequency"
+      Float: 30
+    }
+    Overrides {
+      Name: "cs:DecaySpeed"
+      Float: 6
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17277041997730915063
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -243,18 +295,18 @@ Objects {
       BrakingDecelerationFlying: 600
       MaxFlightSpeed: 600
       MovementControlMode {
-        Value: "mc:emovementcontrolmode:fixedaxes"
+        Value: "mc:emovementcontrolmode:viewrelative"
       }
       LookControlMode {
         Value: "mc:elookcontrolmode:absolute_tocursor"
       }
       FacingMode {
-        Value: "mc:efacingmode:facemovement"
+        Value: "mc:efacingmode:faceaimalways"
       }
-      DefaultRotationRate: -1
+      DefaultRotationRate: 540
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
-        Value: "mc:eprojectionplane:yz"
+        Value: "mc:eprojectionplane:xy"
       }
       LookAtCursorProjectionPlaneAnchor {
         Value: "mc:eprojectionplaneanchor:playerposition"
@@ -271,7 +323,7 @@ Objects {
       CanMoveLeft: true
       CanMoveRight: true
       AbilityAimMode {
-        Value: "mc:eabilityaimmode:viewrelative"
+        Value: "mc:eabilityaimmode:lookrelative"
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2

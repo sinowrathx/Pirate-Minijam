@@ -553,11 +553,11 @@ Assets {
           }
           Overrides {
             Name: "cs:AttackImpulse"
-            Float: 0
+            Float: 50000
           }
           Overrides {
             Name: "cs:VerticalImpulse"
-            Float: 0
+            Float: 20000
           }
           Overrides {
             Name: "cs:DamageRangePlayers"
@@ -635,11 +635,11 @@ Assets {
           }
           Overrides {
             Name: "cs:AttackImpulse"
-            Float: 0
+            Float: 50000
           }
           Overrides {
             Name: "cs:VerticalImpulse"
-            Float: 0
+            Float: 20000
           }
           Overrides {
             Name: "cs:DamageRangePlayers"
