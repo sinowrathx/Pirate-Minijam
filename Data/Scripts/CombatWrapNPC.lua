@@ -294,12 +294,14 @@ function wrapper.FindInSphere(position, radius, parameters)
 end
 
 function FindRoot(npc)
-	local root = npc:FindTemplateRoot()
-	if not root then
-		if npc:IsA("DamageableObject") then
-			return npc
+	if Object.IsValid(npc) then
+		local root = npc:FindTemplateRoot()
+		if not root then
+			if npc:IsA("DamageableObject") then
+				return npc
+			end
+			root = npc:FindAncestorByType("DamageableObject")
 		end
-		root = npc:FindAncestorByType("DamageableObject")
 	end
 	if root then
 		return root

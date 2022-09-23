@@ -9387,7 +9387,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            Y: 2200
+            Y: 2400
             Z: 50
           }
         }
@@ -9395,6 +9395,19 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -90
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15990174913839831250
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.301757783
+            Y: 0.117248416
+            Z: 15.8486328
           }
         }
       }
@@ -10824,7 +10837,7 @@ Objects {
 }
 Objects {
   Id: 8477420766962451463
-  Name: "Costume"
+  Name: "Static Equipments"
   Transform {
     Location {
     }
@@ -10839,6 +10852,7 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 4000319521450510303
   ChildIds: 8661457730198193847
+  ChildIds: 17789825188046664317
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10853,6 +10867,58 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17789825188046664317
+  Name: "Static Player Equipment"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8477420766962451463
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16657464430720987128
+      value {
+        Overrides {
+          Name: "Name"
+          String: "DodgeRoll"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4125973370737336172
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -10880,7 +10946,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Static Player Equipment"
+          String: "Weapon"
         }
         Overrides {
           Name: "cs:EquipmentTemplate"
@@ -10930,12 +10996,12 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Static Player Equipment"
+          String: "Costume"
         }
         Overrides {
           Name: "cs:EquipmentTemplate"
           AssetReference {
-            Id: 2520388701754638176
+            Id: 15023833634154362356
           }
         }
         Overrides {
@@ -11011,6 +11077,12 @@ Objects {
     }
   }
   ParentId: 5343249510736830432
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 9912483276150761006
@@ -11018,6 +11090,16 @@ Objects {
         Overrides {
           Name: "Name"
           String: "Tile1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
         }
       }
     }

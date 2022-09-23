@@ -1,13 +1,13 @@
 Assets {
-  Id: 8391047929318651992
-  Name: "Ice Full Circle Swipe Effect"
+  Id: 17621382159338273004
+  Name: "Dragon Muzzle Flash"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 5757097722660440297
+      RootId: 10685006978684443266
       Objects {
-        Id: 5757097722660440297
-        Name: "Ice Full Circle Swipe Effect"
+        Id: 10685006978684443266
+        Name: "Pistol Muzzle Flash"
         Transform {
           Scale {
             X: 1
@@ -16,11 +16,10 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 12298638062362838851
-        ChildIds: 3940089097447692319
+        ChildIds: 12578402280350496929
+        ChildIds: 6953748068337573496
         UnregisteredParameters {
         }
-        Lifespan: 0.5
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45,13 +44,12 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 12298638062362838851
-        Name: "Sword Swipe Full Circle"
+        Id: 12578402280350496929
+        Name: "Flamethrower Activate Firing 01 SFX"
         Transform {
           Location {
           }
           Rotation {
-            Roll: 179.999985
           }
           Scale {
             X: 1
@@ -59,46 +57,53 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5757097722660440297
+        ParentId: 10685006978684443266
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 16402291226897156258
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 6953748068337573496
+        Name: "Generic Muzzleflash VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 2.01851702
+            Y: 2.01851702
+            Z: 2.01851702
+          }
+        }
+        ParentId: 10685006978684443266
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Size"
-            Vector {
-              X: 5.5
-              Y: 5.5
-              Z: 1
-            }
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.761000037
-              G: 2.99999905
-              B: 5
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Edge Color"
-            Color {
-              R: 0.4
-              G: 0.4
-              B: 0.4
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 0.55423218
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
+            Name: "bp:Particle Size Multiplier"
+            Float: 0.6
           }
         }
         Collidable_v2 {
@@ -112,9 +117,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 4037298589509087562
-          }
-          TeamSettings {
+            Id: 16322635077100878811
           }
           Vfx {
             AutoPlay: true
@@ -128,65 +131,23 @@ Assets {
         }
         IsReplicationEnabledByDefault: true
       }
-      Objects {
-        Id: 3940089097447692319
-        Name: "Sword Swipe Whoosh 01 SFX"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5757097722660440297
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 1647461845235488487
-          }
-          AutoPlay: true
-          Volume: 1
-          Falloff: 3600
-          Radius: 400
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
     }
     Assets {
-      Id: 4037298589509087562
-      Name: "Sword Swipe Full Circle"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_sword_swipe_02"
-      }
-    }
-    Assets {
-      Id: 1647461845235488487
-      Name: "Sword Swipe Whoosh 01 SFX"
+      Id: 16402291226897156258
+      Name: "Flamethrower Activate Firing 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_sword_swipe_whoosh_01_Cue_ref"
+        AssetId: "sfx_flamethrower_activate_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16322635077100878811
+      Name: "Generic Muzzle Flash VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_generic_muzzleflash"
       }
     }
     PrimaryAssetId {

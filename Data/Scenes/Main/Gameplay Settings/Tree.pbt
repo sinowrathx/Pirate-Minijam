@@ -285,8 +285,8 @@ Objects {
       WalkSpeed: 640
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
-      JumpMaxCount: 1
-      JumpVelocity: 900
+      JumpMaxCount: 2
+      JumpVelocity: 700
       GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420

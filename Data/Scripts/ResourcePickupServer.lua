@@ -40,6 +40,9 @@ end
 -- nil OnBeginOverlap(Trigger, CoreObject)
 -- Change the player's resources, broadcast an event, and self-destruct
 function OnBeginOverlap(trigger, other)
+	if other:IsA("StaticMesh") then
+		COMPONENT_ROOT:Destroy()
+	end
 	if other:IsA("Player") then
 		local applied = false
 
