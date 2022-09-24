@@ -35,12 +35,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16154559206308306894
+  Name: "Tiled Generic 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_TiledBG_023"
+  }
+}
+Assets {
   Id: 14263746284030313578
   Name: "Frame Outlined Thick 006"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_015"
+  }
+}
+Assets {
+  Id: 13035323296980050100
+  Name: "Teko Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoBold_ref"
   }
 }
 Assets {
@@ -98,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11026483873202950881
+  Name: "Voice Character Evil Pirate Laughing 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vo_evil_pirate_laughter_01_Cue_ref"
+  }
+}
+Assets {
   Id: 10878542220503242507
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -125,12 +152,30 @@ Assets {
   }
 }
 Assets {
+  Id: 8213807303983274453
+  Name: "Icon Team"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Team"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 7308983004291689624
+  Name: "Roboto Black"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "RobotoBlack_ref"
   }
 }
 Assets {
@@ -197,6 +242,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2415841006913938941
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 2012982151493843358
   Name: "Basic Additive"
   PlatformAssetType: 2
@@ -212,5 +266,14 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "LondrinaSolidBlack_ref"
+  }
+}
+Assets {
+  Id: 964397897864471725
+  Name: "Abstract Background 02"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Core_UI_AbstractPack_Background_003"
   }
 }
