@@ -39,7 +39,6 @@ local LOOT_ID = ROOT:GetCustomProperty("LootId")
 
 local projectileImpactListener = nil
 
-
 function GetTeam()
 	if not Object.IsValid(ROOT) then
 		return 0
@@ -188,10 +187,23 @@ function SetHealth(value)
 	ROOT.hitPoints = value
 end
 
-function DropRewards(killer)
+--function DropRewards(killer)
 	-- Give resources
-	if REWARD_RESOURCE_TYPE and Object.IsValid(killer) and killer:IsA("Player") then
-		killer:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT)
+	--if REWARD_RESOURCE_TYPE and Object.IsValid(killer) and killer:IsA("Player") then
+		--killer:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT)
+	--end
+
+	-- Drop loot
+	--if LOOT_ID ~= "" and LOOT_DROP_FACTORY() then
+		--local pos = script:GetWorldPosition()
+		--LOOT_DROP_FACTORY().Drop(LOOT_ID, pos)
+	--end
+--end
+
+function DropRewards(player)
+	-- Give resources
+	for i,player in ipairs(Game.GetPlayers()) do
+    	player:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT)
 	end
 
 	-- Drop loot
