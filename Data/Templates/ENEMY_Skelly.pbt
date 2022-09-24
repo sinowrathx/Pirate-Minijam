@@ -32,7 +32,7 @@ Assets {
           }
           Overrides {
             Name: "cs:RewardResourceAmount"
-            Int: 25
+            Int: 75
           }
           Overrides {
             Name: "cs:LootId"

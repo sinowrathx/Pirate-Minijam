@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10878542220503242507
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
   Id: 10529508212603507516
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
@@ -152,24 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5288005608896082047
-  Name: "Survival Crossbow 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Survival_Weapon_Crossbow_001"
-  }
-}
-Assets {
-  Id: 5210682014710167866
-  Name: "Fantasy Boot 014"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Gear_Boot_014"
-  }
-}
-Assets {
   Id: 5017035769320607785
   Name: "Fantasy Coins 005"
   PlatformAssetType: 9
@@ -197,20 +188,20 @@ Assets {
   }
 }
 Assets {
+  Id: 2012982151493843358
+  Name: "Basic Additive"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_additive_basic"
+  }
+}
+Assets {
   Id: 1953844252455219690
   Name: "Londrina Solid Black"
   PlatformAssetType: 28
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "LondrinaSolidBlack_ref"
-  }
-}
-Assets {
-  Id: 796189722110714046
-  Name: "Fantasy Ale 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Food_Ale_002"
   }
 }

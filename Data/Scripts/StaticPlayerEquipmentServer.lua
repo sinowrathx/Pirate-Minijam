@@ -87,6 +87,7 @@ end
 -- nil OnPlayerJoined(Player)
 -- Gives original equipment
 function OnPlayerJoined(player)
+	player:SetResource("AtkBuff", 1)
 	if TEAM ~= 0 then
 		playerTeams[player] = player.team
 	end

@@ -15,7 +15,6 @@ function TAGS() return MODULE.Get("standardcombo.Combat.Tags") end
 
 
 local EQUIPMENT = script:FindAncestorByType("Equipment")
-
 local ABILITY = script:GetCustomProperty("Ability"):WaitForObject()
 local HIT_BOX = script:GetCustomProperty("HitBox"):WaitForObject()
 local DAMAGE_RANGE_NPCS = script:GetCustomProperty("DamageRange")
@@ -55,7 +54,8 @@ function MeleeAttack(other)
 	if not Object.IsValid(ABILITY) then return end
 	if not Object.IsValid(ABILITY.owner) then return end
 	if other == ABILITY.owner then return end
-	
+	local LVLBUFF = ABILITY.owner:GetResource("Level")
+	local ATKBUFF = ABILITY.owner:GetResource("AtkBuff")
 	if not other:IsA("Damageable") 
 	and other.FindAncestorByType then -- E.g. Projectiles don't have this function
 		local damageable = other:FindAncestorByType("Damageable")
@@ -100,8 +100,8 @@ function MeleeAttack(other)
 			damageRange = HEADSHOT_NPCS
 		end
 
-		local minDmg = CoreMath.Round(damageRange.x)
-		local maxDmg = CoreMath.Round(damageRange.y)
+		local minDmg = CoreMath.Round(damageRange.x + LVLBUFF * ATKBUFF)
+		local maxDmg = CoreMath.Round(damageRange.y + LVLBUFF * ATKBUFF)
 
 		local dmg = Damage.New()
 		dmg.amount = math.random(minDmg, maxDmg)
