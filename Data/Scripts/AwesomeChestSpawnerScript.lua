@@ -74,7 +74,7 @@ function Tick(deltaTime)
     
     if  missing_chests > 0 then
         for i=1, missing_chests do
-        	Task.Wait(10)
+        	--Task.Wait(10)
             Task.Spawn(CalculateTreasurePosition)
             Task.Wait(10)
         end

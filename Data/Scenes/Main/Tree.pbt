@@ -20,9 +20,10 @@ Objects {
   ChildIds: 5343249510736830432
   ChildIds: 8477420766962451463
   ChildIds: 11855153401888686476
-  ChildIds: 17681243964966759209
   ChildIds: 7597521458731552716
   ChildIds: 13785456521350284450
+  ChildIds: 15553700023149581499
+  ChildIds: 3698126315260560398
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,92 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 3698126315260560398
+  Name: "Plane 1m - One Sided"
+  Transform {
+    Location {
+      X: -2500
+      Z: 100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 18
+      Y: 150
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18308143120440711473
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15553700023149581499
+  Name: "Enemy Spawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Enemy Spawner"
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -186,7 +273,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MaxChests"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:RadiusCheck"
@@ -224,13 +311,13 @@ Objects {
   Transform {
     Location {
       X: 500
-      Z: 500
+      Z: 1000
     }
     Rotation {
     }
     Scale {
       X: 35
-      Y: 45
+      Y: 145
       Z: 0.2
     }
   }
@@ -9622,53 +9709,6 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 17681243964966759209
-  Name: "ENEMY_Skelly"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14380626932552790013
-      value {
-        Overrides {
-          Name: "Name"
-          String: "ENEMY_Skelly"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 75
-            Y: 2400
-            Z: 50
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10416782956116914985
-    }
-  }
-}
-Objects {
   Id: 11855153401888686476
   Name: "Systems"
   Transform {
@@ -11296,8 +11336,9 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 8451732469506909205
-  ChildIds: 1054752019233634531
-  ChildIds: 5425034892541531844
+  ChildIds: 14404750075041428510
+  ChildIds: 4284026204283257998
+  ChildIds: 2220900277898235453
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11319,7 +11360,7 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 5425034892541531844
+  Id: 2220900277898235453
   Name: "Tile2"
   Transform {
     Scale {
@@ -11329,28 +11370,21 @@ Objects {
     }
   }
   ParentId: 5343249510736830432
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4199084501846311802
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Default Floor"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14709351426007843148
+      key: 9912483276150761006
       value {
         Overrides {
           Name: "Name"
           String: "Tile2"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
@@ -11358,20 +11392,55 @@ Objects {
             Y: 5000
           }
         }
+      }
+    }
+    TemplateAsset {
+      Id: 10483868285752853608
+    }
+  }
+}
+Objects {
+  Id: 4284026204283257998
+  Name: "Tile2"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5343249510736830432
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9912483276150761006
+      value {
         Overrides {
-          Name: "Rotation"
-          Rotator {
+          Name: "Name"
+          String: "Tile2"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: -5000
           }
         }
       }
     }
     TemplateAsset {
-      Id: 2238008130416195610
+      Id: 10483868285752853608
     }
   }
 }
 Objects {
-  Id: 1054752019233634531
+  Id: 14404750075041428510
   Name: "Tile1"
   Transform {
     Scale {
@@ -11381,24 +11450,9 @@ Objects {
     }
   }
   ParentId: 5343249510736830432
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5144861858689687228
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Default Floor"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9912483276150761006
+      key: 14709351426007843148
       value {
         Overrides {
           Name: "Name"
@@ -11417,7 +11471,7 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 10483868285752853608
+      Id: 2238008130416195610
     }
   }
 }

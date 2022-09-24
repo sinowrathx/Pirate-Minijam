@@ -1,4 +1,13 @@
 Assets {
+  Id: 18308143120440711473
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 18287256681545511353
   Name: "Crosshair 004"
   PlatformAssetType: 9
