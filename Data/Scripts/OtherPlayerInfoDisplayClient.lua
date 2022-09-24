@@ -1,3 +1,5 @@
+local ABLP = require(script:GetCustomProperty("API"))
+
 local Root = script:GetCustomProperty("Root"):WaitForObject()
 local PlayersStatsPanel = script:GetCustomProperty("PlayersStatsPanel"):WaitForObject()
 local PlayerIcon = script:GetCustomProperty("PlayerIcon"):WaitForObject()
@@ -34,9 +36,6 @@ end
 
 local LOCAL_PLAYER = nil
 local PlayerList = {}
-local previousHealth = 0
-local previousHealthChange = 0
-local healthIncrement = 0.005
 
 local function CloseInfoIfNil()
     PLAYERS_PANEL.visibility = Visibility.FORCE_OFF
@@ -53,47 +52,51 @@ function Init()
     Task.Spawn(function ()
         if Object.IsValid(LOCAL_PLAYER) then
         PlayerLevel.text = tostring(LOCAL_PLAYER:GetResource(LevelResource))
-        local xpAmount = LOCAL_PLAYER:GetResource(XP_Resource)
-        local reqXpAmount = LOCAL_PLAYER:GetResource(ReqXP_Resource)
-        XP_Bar.progress = xpAmount / reqXpAmount
+        local nextXP = ABLP.GetNextRequiredXPForPlayer(LOCAL_PLAYER)
+        local previousXP = ABLP.GetLastRequiredXPForPlayer(LOCAL_PLAYER)
+
+        if previousXP == 0 then
+            XP_Bar.progress = (LOCAL_PLAYER:GetResource("XP") - previousXP) / nextXP
+        else
+            XP_Bar.progress = (LOCAL_PLAYER:GetResource("XP") - previousXP) / (nextXP - previousXP)
+        end
         Coin_Text.text = tostring(LOCAL_PLAYER:GetResource("Coins"))
         end
     end, 2)
 end
 
-function OnResourceChanged(player, resName, resAmount)
-    if resName == LevelResource then
-        PlayerLevel.text = tostring(resAmount)
-    elseif resName == XP_Resource or resName == ReqXP_Resource then
-        local xpAmount = LOCAL_PLAYER:GetResource(XP_Resource)
-        local reqXpAmount = LOCAL_PLAYER:GetResource(ReqXP_Resource)
-        XP_Bar.progress = xpAmount / reqXpAmount
-        Coin_Text.text = LOCAL_PLAYER:GetResource("Coins")
+function OnResourceChanged(player, resName, value)
+    if player == LOCAL_PLAYER then
+        if resName == LevelResource and player == LOCAL_PLAYER then
+            PlayerLevel.text = tostring(value)
+        end
+        if resName == "Weapon" then
+            --find weapon equipped
+                --iterate through all objects if neccesary
+            --get icon from object
+            --set UI icon to MUID of object's icon
+        end
+        Coin_Text.text = tostring(LOCAL_PLAYER:GetResource("Coins"))
+    elseif resName == ABLP.GetXPResource() and player == LOCAL_PLAYER then
+        
+        local nextXP = ABLP.GetNextRequiredXPForPlayer(LOCAL_PLAYER)
+        local previousXP = ABLP.GetLastRequiredXPForPlayer(LOCAL_PLAYER)
+
+        if previousXP == 0 then
+            XP_Bar.progress = (value - previousXP) / nextXP
+        else
+            XP_Bar.progress = (value - previousXP) / (nextXP - previousXP)
+        end
     end
 end
 
 function AnimateHealthBar()
     -- Check if there has been a change in the player's health
     if LOCAL_PLAYER == nil then CloseInfoIfNil() return end
-    if Object.IsValid(LOCAL_PLAYER) and LOCAL_PLAYER.hitPoints ~= previousHealth then  
-        local healthChange = LOCAL_PLAYER.hitPoints - previousHealth
 
-        if healthChange >= 0 then -- health increased 
-            -- update progress bars
-            --Healthbar_Change:SetFillColor(HealthGainColor)
-            Healthbar.progress = previousHealth / LOCAL_PLAYER.maxHitPoints
-            --Healthbar_Change.progress = LOCAL_PLAYER.hitPoints / LOCAL_PLAYER.maxHitPoints
-        else -- health decreased 
-            -- update progress bars
-            --Healthbar_Change:SetFillColor(HealthLossColor)
-            Healthbar.progress = LOCAL_PLAYER.hitPoints / LOCAL_PLAYER.maxHitPoints
-            --Healthbar_Change.progress = previousHealth / LOCAL_PLAYER.maxHitPoints
-        end
-
-        --HealthText.text = string.format("%d / %d", LOCAL_PLAYER.hitPoints, LOCAL_PLAYER.maxHitPoints)
-
-        previousHealth = LOCAL_PLAYER.hitPoints
-        previousHealthChange = healthChange
+    if Object.IsValid(LOCAL_PLAYER) then
+        local healthFraction = LOCAL_PLAYER.hitPoints / LOCAL_PLAYER.maxHitPoints
+        Healthbar.progress = healthFraction
     end
 end
 

@@ -12,7 +12,7 @@ local function GetOtherPlayers()
 end
 
 function WaitToRefresh()
-    Task.Wait(3)
+    Task.Wait(2)
     GetOtherPlayers()
 end
 
