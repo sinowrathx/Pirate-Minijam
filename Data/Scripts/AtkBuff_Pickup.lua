@@ -5,9 +5,9 @@ function OnBeginOverlap(trigger, other)
 	if other:IsA("Player") then
 		TRIGGER.isEnabled = false
 		ROOT.visibility = Visibility.FORCE_OFF
-		other.maxWalkSpeed = 1000
+		other:SetResource("AtkBuff", 2)
 		Task.Wait(10)
-		other.maxWalkSpeed = 640
+		other:SetResource("AtkBuff", 1)
 		ROOT:Destroy()
 	end
 end

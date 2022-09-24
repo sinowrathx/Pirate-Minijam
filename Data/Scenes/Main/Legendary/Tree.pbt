@@ -1,2 +1,0 @@
-Name: "Legendary"
-RootId: 15036332419294576479

@@ -1,6 +1,6 @@
 Assets {
-  Id: 16781524874388086349
-  Name: "Haste_Pickup"
+  Id: 5623138942400334069
+  Name: "AtkBuff_Pickup"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {

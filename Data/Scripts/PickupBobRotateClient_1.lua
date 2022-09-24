@@ -16,6 +16,8 @@ local AMPLITUDE = script:GetCustomProperty("BobAmplitude") or 15
 local FREQUENCY = script:GetCustomProperty("BobFrequency") or 2
 local ROTATION_SPEED = script:GetCustomProperty("RotationSpeed") or 100
 
+local UICONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
+
 local startingPos = TARGET:GetPosition()
 local jumpVelocity = SPAWN_IMPULSE
 
@@ -49,3 +51,5 @@ function Tick(deltaTime)
 		TARGET:SetRotation(rot)
 	end
 end
+
+UICONTAINER:LookAtLocalView()
