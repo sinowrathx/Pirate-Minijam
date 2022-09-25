@@ -303,7 +303,7 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:faceaimalways"
       }
-      DefaultRotationRate: 540
+      DefaultRotationRate: -1
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
@@ -416,6 +416,7 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }

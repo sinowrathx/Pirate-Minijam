@@ -20,9 +20,6 @@ local LevelResource = Root:GetCustomProperty("LevelResource")
 local XP_Resource = Root:GetCustomProperty("XP_Resource")
 local ReqXP_Resource = Root:GetCustomProperty("ReqXP_Resource")
 local PlayertoDisplay = Root:GetCustomProperty("PlayerNumber")
-
-local p1 = Game.GetLocalPlayer()
-local p2 = Game.GetPlayers({ignorePlayers = p1})[1]
 --=====================================================
 
 if LevelResource == "" then
@@ -99,20 +96,13 @@ function AnimateHealthBar()
 
     if Object.IsValid(LOCAL_PLAYER) then
         local healthFraction = LOCAL_PLAYER.hitPoints / LOCAL_PLAYER.maxHitPoints
-        Healthbar.progress = healthFraction
+        Healthbar.progress = healthFraction		
     end
 end
 
 function Tick(deltaTime)
     if LOCAL_PLAYER == nil then return else
         AnimateHealthBar()
-    end
-    if Object.IsValid(p2) then
-    	if p1.team == p2.team then
-    		PlayerName:SetColor(Color.GREEN)
-   		else
-    		PlayerName:SetColor(Color.RED)
-    	end
     end
 end
 

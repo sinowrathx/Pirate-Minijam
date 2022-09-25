@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 5343249510736830432
-        ChildIds: 4530947090327827825
+        ChildIds: 14891855027628929765
         ChildIds: 1784703903637858991
         ChildIds: 17391600345216185585
         ChildIds: 5144861858689687228
@@ -57,8 +57,8 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 4530947090327827825
-        Name: "Advanced Sketch Line Post Process"
+        Id: 14891855027628929765
+        Name: "Ambient Occlusion Post Process"
         Transform {
           Location {
             Z: 800
@@ -74,44 +74,12 @@ Assets {
         ParentId: 9912483276150761006
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Background Color"
-            Color {
-              R: 1
-              G: 0.919531941
-              B: 0.734426
-            }
-          }
-          Overrides {
-            Name: "bp:Show Line Width Controls"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Show Depth Fade Controls"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Show Threshold Controls"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Highlight Threshold"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Contour Threshold"
-            Float: 2
-          }
-          Overrides {
-            Name: "bp:Highlight Line Width"
-            Float: 0
-          }
-          Overrides {
             Name: "bp:Unbounded"
             Bool: false
           }
           Overrides {
-            Name: "bp:Blend Radius"
-            Float: 0
+            Name: "bp:Radius"
+            Float: 300
           }
         }
         Collidable_v2 {
@@ -128,7 +96,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 454480631094615022
+            Id: 7236416051106766729
           }
           TeamSettings {
           }
@@ -12628,12 +12596,12 @@ Assets {
       }
     }
     Assets {
-      Id: 454480631094615022
-      Name: "Advanced Sketch Line Post Process"
+      Id: 7236416051106766729
+      Name: "Ambient Occlusion Post Process"
       PlatformAssetType: 20
       PrimaryAsset {
         AssetType: "BlueprintAssetRef"
-        AssetId: "fxbp_ppm_sketchline"
+        AssetId: "fxbp_post_process_ao"
       }
     }
     Assets {

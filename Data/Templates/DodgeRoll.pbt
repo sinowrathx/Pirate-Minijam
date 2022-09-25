@@ -108,7 +108,7 @@ Assets {
             PreventOtherAbilities: true
             IsTargetDataUpdated: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
+              Value: "mc:eabilitysetfacing:aim"
             }
           }
           Animation: "unarmed_roll"

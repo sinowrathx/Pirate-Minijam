@@ -48,7 +48,7 @@ Assets {
           }
           Overrides {
             Name: "cs:AttackCast"
-            Float: 0.5
+            Float: 0.3
           }
           Overrides {
             Name: "cs:AttackRecovery"
@@ -60,11 +60,11 @@ Assets {
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 400
+            Float: 550
           }
           Overrides {
             Name: "cs:TurnSpeed"
-            Float: 2
+            Float: 1
           }
           Overrides {
             Name: "cs:LogicalPeriod"
@@ -104,7 +104,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ChaseRadius"
-            Float: 4000
+            Float: 2000
           }
           Overrides {
             Name: "cs:Team"
@@ -490,7 +490,7 @@ Assets {
         }
         DamageableObject {
           DamageSettings {
-            MaxHitpoints: 25
+            MaxHitpoints: 50
             StartingHitpoints: 500
             DestroyOnDeath: true
             DestroyOnDeathDelay: 10
@@ -667,11 +667,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 5
+            Int: 10
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 5
+            Float: 10
           }
           Overrides {
             Name: "cs:ProjectileBody"

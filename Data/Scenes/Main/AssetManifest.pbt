@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18227668690382724570
+  Name: "World Music Score Set 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_WorldMusic_ref"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -41,6 +50,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_TiledBG_023"
+  }
+}
+Assets {
+  Id: 15556869846635109627
+  Name: "Decal Ivy Big"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_ivy_001"
+  }
+}
+Assets {
+  Id: 14964967653464214432
+  Name: "Decal Dirt Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_dirt_patch_001"
   }
 }
 Assets {
@@ -98,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 11757390778361009318
   Name: "Icon Profile"
   PlatformAssetType: 9
@@ -134,12 +170,39 @@ Assets {
   }
 }
 Assets {
+  Id: 10795596082366365410
+  Name: "Decal Stains Round 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_round_001"
+  }
+}
+Assets {
   Id: 10529508212603507516
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
+  Id: 10457545783047106170
+  Name: "Prism - 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_octagon_hq_001"
+  }
+}
+Assets {
+  Id: 10279419131238093919
+  Name: "Decal Ivy Small (variations)"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_ivy_002"
   }
 }
 Assets {
@@ -158,6 +221,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Team"
+  }
+}
+Assets {
+  Id: 7918679729282582285
+  Name: "Wood Planks"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_dark_001_uv"
   }
 }
 Assets {
@@ -197,12 +269,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6536381687833057398
+  Name: "Decal Bullet Damage Wood"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_bullet_wood_001"
+  }
+}
+Assets {
   Id: 6443744433088953291
   Name: "Luckiest Guy"
   PlatformAssetType: 28
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "LuckiestGuyRegular_ref"
+  }
+}
+Assets {
+  Id: 6120199285221091708
+  Name: "Decal Moss Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_moss_patch_001"
   }
 }
 Assets {
@@ -221,6 +311,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Coins_005"
+  }
+}
+Assets {
+  Id: 4137343365013533672
+  Name: "Decal Stone Cracks Variants 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stone_cracks_001"
+  }
+}
+Assets {
+  Id: 3902767697519824467
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_test_001"
   }
 }
 Assets {
