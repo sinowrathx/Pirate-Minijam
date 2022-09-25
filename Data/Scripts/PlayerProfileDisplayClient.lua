@@ -5,3 +5,4 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 Task.Wait()
 PROFILE_IMAGE:SetPlayerProfile(LOCAL_PLAYER)
 PLAYER_NAME.text = LOCAL_PLAYER.name
+PLAYER_NAME:SetColor(Color.GREEN)

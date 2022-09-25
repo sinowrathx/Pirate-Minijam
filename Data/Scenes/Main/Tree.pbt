@@ -27,6 +27,7 @@ Objects {
   ChildIds: 15553700023149581499
   ChildIds: 3698126315260560398
   ChildIds: 4000230752702302282
+  ChildIds: 9945816222725720460
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -44,6 +45,46 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 9945816222725720460
+  Name: "Nameplates"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15979967455835987047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Nameplates"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8056115730253398945
+    }
+  }
 }
 Objects {
   Id: 4000230752702302282
