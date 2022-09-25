@@ -200,10 +200,12 @@ end
 	--end
 --end
 
-function DropRewards(player)
+function DropRewards(killer, player)
 	-- Give resources
 	for i,player in ipairs(Game.GetPlayers()) do
+		if player.team == killer.team then
     	player:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT)
+    	end
 	end
 
 	-- Drop loot
