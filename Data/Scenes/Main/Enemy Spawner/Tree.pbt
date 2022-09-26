@@ -79,6 +79,92 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
+  Id: 8710621610360261740
+  Name: "SurvivalEnemyCatalog"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15553700023149581499
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ZombieOtherLegs1"
+      AssetReference {
+        Id: 10416782956116914985
+      }
+    }
+    Overrides {
+      Name: "cs:ZombieOtherLegs2"
+      AssetReference {
+        Id: 16098669433962155819
+      }
+    }
+    Overrides {
+      Name: "cs:ZombieSwingRetro"
+      AssetReference {
+        Id: 16098669433962155819
+      }
+    }
+    Overrides {
+      Name: "cs:ZombieUnarmedBro"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:ZombieUnarmedGal"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:ZombieUnarmedGuy1"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:ZombieUnarmedGuy2"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:Difficulty"
+      Float: 2
+    }
+    Overrides {
+      Name: "cs:Rarity"
+      Float: 1.5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4791367108141691522
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 2550191175314024836
   Name: "SurvivalEnemyCatalog"
   Transform {

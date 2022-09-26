@@ -667,11 +667,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 10
+            Float: 15
           }
           Overrides {
             Name: "cs:ProjectileBody"
