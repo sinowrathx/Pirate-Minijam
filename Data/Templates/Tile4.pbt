@@ -13053,7 +13053,7 @@ Assets {
       }
       Objects {
         Id: 5514098637515438278
-        Name: "Floor"
+        Name: "Lava"
         Transform {
           Location {
             X: -598.53363
@@ -13107,7 +13107,7 @@ Assets {
       }
       Objects {
         Id: 3743289247295604656
-        Name: "Floor"
+        Name: "Lava"
         Transform {
           Location {
             X: -573.533569
@@ -13161,7 +13161,7 @@ Assets {
       }
       Objects {
         Id: 11567079688311535168
-        Name: "Floor"
+        Name: "Lava"
         Transform {
           Location {
             X: 426.466431
@@ -13215,7 +13215,7 @@ Assets {
       }
       Objects {
         Id: 1008883895741249515
-        Name: "Floor"
+        Name: "Lava"
         Transform {
           Location {
             X: 426.466431
@@ -13269,7 +13269,7 @@ Assets {
       }
       Objects {
         Id: 6062850711759996565
-        Name: "Floor"
+        Name: "Lava"
         Transform {
           Location {
             X: 426.466431
@@ -13323,7 +13323,7 @@ Assets {
       }
       Objects {
         Id: 9424501745837097969
-        Name: "Floor"
+        Name: "Lava"
         Transform {
           Location {
             X: -573.533569
@@ -13431,7 +13431,7 @@ Assets {
       }
       Objects {
         Id: 13908447877385279772
-        Name: "Floor"
+        Name: "Lava"
         Transform {
           Location {
             X: -598.53363

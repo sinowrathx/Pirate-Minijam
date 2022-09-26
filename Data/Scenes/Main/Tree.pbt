@@ -26,6 +26,7 @@ Objects {
   ChildIds: 15553700023149581499
   ChildIds: 8517282237624008684
   ChildIds: 2333693019354798694
+  ChildIds: 11404732442623811734
   ChildIds: 4000230752702302282
   ChildIds: 9945816222725720460
   ChildIds: 2241350299862481787
@@ -2307,6 +2308,39 @@ Objects {
         }
       }
     }
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 11404732442623811734
+  Name: "Dragon Spawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Dragon Spawner"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
 }

@@ -31,5 +31,9 @@ Assets {
       VirtualFolderPath: "Equipment"
       PlatformAssetType: 3
     }
+    Folders {
+      VirtualFolderPath: "NPC Templates"
+      PlatformAssetType: 5
+    }
   }
 }
