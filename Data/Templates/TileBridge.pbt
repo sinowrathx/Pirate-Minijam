@@ -45,11 +45,12 @@ Assets {
         Transform {
           Location {
             X: 127.177734
+            Z: 15
           }
           Rotation {
           }
           Scale {
-            X: 13.1507568
+            X: 9
             Y: 50
             Z: 1
           }

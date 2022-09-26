@@ -23,7 +23,6 @@ Objects {
   ChildIds: 8477420766962451463
   ChildIds: 11855153401888686476
   ChildIds: 7597521458731552716
-  ChildIds: 13785456521350284450
   ChildIds: 15553700023149581499
   ChildIds: 4000230752702302282
   ChildIds: 9945816222725720460
@@ -32,7 +31,6 @@ Objects {
   ChildIds: 12247445592303755033
   ChildIds: 15820842136081307138
   ChildIds: 355143839912970472
-  ChildIds: 11201063072307680457
   ChildIds: 9061294557451748907
   UnregisteredParameters {
   }
@@ -89,41 +87,6 @@ Objects {
     }
     TemplateAsset {
       Id: 9991877115737228409
-    }
-  }
-}
-Objects {
-  Id: 11201063072307680457
-  Name: "Damageable Crate"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17362084410087563431
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Damageable Crate"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 167.726227
-            Y: 1400.14062
-            Z: 50
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4427146193053970916
     }
   }
 }
@@ -2372,250 +2335,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Enemy Spawner"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 13785456521350284450
-  Name: "Player Buffs"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 339569703121996998
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 339569703121996998
-  Name: "AwesomeChestSpawner"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13785456521350284450
-  ChildIds: 15097909361753989257
-  ChildIds: 17886326829254670750
-  ChildIds: 7941723830721267518
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 7941723830721267518
-  Name: "WorldChests"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 339569703121996998
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 17886326829254670750
-  Name: "AwesomeChestSpawnerScript"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 339569703121996998
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SpawnOrigin"
-      ObjectReference {
-        SelfId: 15097909361753989257
-      }
-    }
-    Overrides {
-      Name: "cs:WorldChests"
-      ObjectReference {
-        SelfId: 7941723830721267518
-      }
-    }
-    Overrides {
-      Name: "cs:Chest"
-      AssetReference {
-        Id: 8543708684589064457
-      }
-    }
-    Overrides {
-      Name: "cs:Chest2"
-      AssetReference {
-        Id: 9001528422926513728
-      }
-    }
-    Overrides {
-      Name: "cs:MaxChests"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:RadiusCheck"
-      Float: 2000
-    }
-    Overrides {
-      Name: "cs:CRL"
-      AssetReference {
-        Id: 5670230866005767642
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12476517406479458951
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 15097909361753989257
-  Name: "SpawnOrigin"
-  Transform {
-    Location {
-      X: 500
-      Z: 1000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 35
-      Y: 300
-      Z: 0.2
-    }
-  }
-  ParentId: 339569703121996998
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2012982151493843358
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.26
-        G: 0.691257954
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10878542220503242507
-    }
-    Teams {
-    }
-    DisableDistanceFieldLighting: true
-    DisableCastShadows: true
-    DisableReceiveDecals: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -11980,6 +11699,7 @@ Objects {
   ChildIds: 2458670235559054618
   ChildIds: 17053112885603254575
   ChildIds: 9068270487380728933
+  ChildIds: 14316598451083299256
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11999,6 +11719,99 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 14316598451083299256
+  Name: "Forge System 3.0"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 33.1637611
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11855153401888686476
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3942658824368163162
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -47.2446213
+            Y: 176.449738
+            Z: -22.8712769
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 102.65274
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11297684210881819848
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -199.28241
+            Y: -25.5872974
+            Z: 100
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3
+            Y: 2
+            Z: 2
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11336574312508859973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Forge System 3.0"
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -1.83621216
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 350
+            Y: 450
+            Z: 55
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2823586467335634160
+    }
+  }
 }
 Objects {
   Id: 9068270487380728933
@@ -13756,7 +13569,7 @@ Objects {
     }
     Scale {
       X: 18
-      Y: 500
+      Y: 99999
       Z: 1
     }
   }
@@ -13765,7 +13578,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

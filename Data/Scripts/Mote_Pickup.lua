@@ -8,7 +8,9 @@ function OnBeginOverlap(trigger, other)
 		other.maxWalkSpeed = 1000
 		Task.Wait(10)
 		other.maxWalkSpeed = 640
-		ROOT:Destroy()
+		if Object.IsValid(ROOT) then
+			ROOT:Destroy()
+		end
 	end
 end
 

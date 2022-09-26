@@ -233,8 +233,6 @@ Assets {
         ChildIds: 10447731498280453925
         ChildIds: 823296532907697629
         ChildIds: 16323879651156610211
-        ChildIds: 3812766016920110719
-        ChildIds: 15150357922976916689
         ChildIds: 18306817517045253838
         ChildIds: 16347424520555672630
         ChildIds: 1599875210733806570
@@ -11916,132 +11914,6 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 3812766016920110719
-        Name: "Rock Pile 002"
-        Transform {
-          Location {
-            X: 2771.87109
-            Y: -3008.76758
-            Z: 650
-          }
-          Rotation {
-            Yaw: 84.9999771
-          }
-          Scale {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-        ParentId: 16822779034834388573
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10955130181592253117
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 241839450553190343
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
-      Objects {
-        Id: 15150357922976916689
-        Name: "Rock Pile 001"
-        Transform {
-          Location {
-            X: 3378.30078
-            Y: -2961.4375
-            Z: 650
-          }
-          Rotation {
-            Yaw: 84.9999771
-          }
-          Scale {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-        ParentId: 16822779034834388573
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10955130181592253117
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10835155324150586940
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
-      Objects {
         Id: 18306817517045253838
         Name: "Rock 01"
         Transform {
@@ -13126,7 +12998,7 @@ Assets {
       }
       Objects {
         Id: 9572568121107990305
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: -598.53363
@@ -13180,7 +13052,7 @@ Assets {
       }
       Objects {
         Id: 5514098637515438278
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: -598.53363
@@ -13234,7 +13106,7 @@ Assets {
       }
       Objects {
         Id: 3743289247295604656
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: -573.533569
@@ -13288,7 +13160,7 @@ Assets {
       }
       Objects {
         Id: 11567079688311535168
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: 426.466431
@@ -13342,7 +13214,7 @@ Assets {
       }
       Objects {
         Id: 1008883895741249515
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: 426.466431
@@ -13396,7 +13268,7 @@ Assets {
       }
       Objects {
         Id: 6062850711759996565
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: 426.466431
@@ -13450,7 +13322,7 @@ Assets {
       }
       Objects {
         Id: 9424501745837097969
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: -573.533569
@@ -13504,7 +13376,7 @@ Assets {
       }
       Objects {
         Id: 2459135613465207357
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: -598.53363
@@ -13558,7 +13430,7 @@ Assets {
       }
       Objects {
         Id: 13908447877385279772
-        Name: "Fantasy Castle Floor 01 4m"
+        Name: "Floor"
         Transform {
           Location {
             X: -598.53363
@@ -13699,24 +13571,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_rock_generic_001"
-      }
-    }
-    Assets {
-      Id: 241839450553190343
-      Name: "Rock Pile 002"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_rocks_small_002"
-      }
-    }
-    Assets {
-      Id: 10835155324150586940
-      Name: "Rock Pile 001"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_rocks_small_001"
       }
     }
     Assets {

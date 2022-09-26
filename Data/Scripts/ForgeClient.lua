@@ -85,11 +85,12 @@ function OnBindingPressed(player, binding)
 		--Chat.LocalMessage(string.format("Equip Blacksmith's Hammer to Forge!"))
 		--return end	
 			if (binding == "ability_primary") and forgeable == true and LOCAL_PLAYER:GetResource("Coins") > reqZen then --and Hammertime == true then
-				Task.Wait(0.3)
+				Task.Wait(0.5)
 				FORGE_SFX:Play()
 				Events.BroadcastToServer("Forge")
 			--if LOCAL_PLAYER:GetResource("Coins") < level * 10 + 90 then 
 			else
+				Task.Wait(0.5)
 				Chat.LocalMessage(string.format("Not Enough Coins!"))
 				ERROR_SFX:Play()
 			--else 

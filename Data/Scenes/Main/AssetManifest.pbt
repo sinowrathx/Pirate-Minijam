@@ -143,15 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10878542220503242507
-  Name: "Cube - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_001"
-  }
-}
-Assets {
   Id: 10529508212603507516
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
@@ -275,15 +266,6 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "TekoRegular_ref"
-  }
-}
-Assets {
-  Id: 2012982151493843358
-  Name: "Basic Additive"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_additive_basic"
   }
 }
 Assets {

@@ -8,7 +8,9 @@ function OnBeginOverlap(trigger, other)
 		other:SetResource("AtkBuff", 2)
 		Task.Wait(10)
 		other:SetResource("AtkBuff", 1)
-		ROOT:Destroy()
+		if Object.IsValid(ROOT) then
+			ROOT:Destroy()
+		end
 	end
 end
 

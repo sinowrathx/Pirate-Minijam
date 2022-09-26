@@ -56,6 +56,7 @@ function MeleeAttack(other)
 	if other == ABILITY.owner then return end
 	local LVLBUFF = ABILITY.owner:GetResource("Level")
 	local ATKBUFF = ABILITY.owner:GetResource("AtkBuff")
+	local FORGEBUFF = ABILITY.owner:GetResource("upgrade")
 	if not other:IsA("Damageable") 
 	and other.FindAncestorByType then -- E.g. Projectiles don't have this function
 		local damageable = other:FindAncestorByType("Damageable")
@@ -100,8 +101,8 @@ function MeleeAttack(other)
 			damageRange = HEADSHOT_NPCS
 		end
 
-		local minDmg = CoreMath.Round(damageRange.x + LVLBUFF * ATKBUFF)
-		local maxDmg = CoreMath.Round(damageRange.y + LVLBUFF * ATKBUFF)
+		local minDmg = CoreMath.Round(damageRange.x + LVLBUFF + FORGEBUFF * ATKBUFF)
+		local maxDmg = CoreMath.Round(damageRange.y + LVLBUFF + FORGEBUFF * ATKBUFF)
 
 		local dmg = Damage.New()
 		dmg.amount = math.random(minDmg, maxDmg)
