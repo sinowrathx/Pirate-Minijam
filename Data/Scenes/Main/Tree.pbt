@@ -13362,7 +13362,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 4000319521450510303
+  ChildIds: 2602280628343514163
   ChildIds: 8661457730198193847
   ChildIds: 17789825188046664317
   Collidable_v2 {
@@ -13492,9 +13492,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4000319521450510303
-  Name: "Static Player Equipment"
+  Id: 2602280628343514163
+  Name: "EquipOnPlayerJoin"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -13502,44 +13506,47 @@ Objects {
     }
   }
   ParentId: 8477420766962451463
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16657464430720987128
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Costume"
-        }
-        Overrides {
-          Name: "cs:EquipmentTemplate"
-          AssetReference {
-            Id: 15023833634154362356
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:EquipmentTemplate1"
+      AssetReference {
+        Id: 2520388701754638176
       }
     }
-    TemplateAsset {
-      Id: 3554772704273624534
+    Overrides {
+      Name: "cs:EquipmentTemplate2"
+      AssetReference {
+        Id: 15023833634154362356
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate3"
+      AssetReference {
+        Id: 18399854773692884201
+      }
     }
   }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7858781812931707706
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 5343249510736830432
