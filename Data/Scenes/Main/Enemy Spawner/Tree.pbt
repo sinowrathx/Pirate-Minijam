@@ -102,7 +102,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MinSpawnRadius"
-      Float: 2500
+      Float: 2000
     }
     Overrides {
       Name: "cs:MaxSpawnRadius"
@@ -114,7 +114,7 @@ Objects {
     }
     Overrides {
       Name: "cs:DifficultyIncreasePerMeter"
-      Float: 0.1
+      Float: 0.7
     }
   }
   Collidable_v2 {

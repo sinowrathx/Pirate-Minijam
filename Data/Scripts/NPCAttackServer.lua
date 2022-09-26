@@ -147,7 +147,6 @@ function CleanupProjectileListener()
 	end
 end
 
-
 function SpawnAsset(template, pos, rot)
 	if not template then
 		return
@@ -162,7 +161,6 @@ function SpawnAsset(template, pos, rot)
 		spawnedVfx.lifeSpan = 1.5
 	end
 end
-
 
 function OnDestroyed(obj)
 	CleanupProjectileListener()

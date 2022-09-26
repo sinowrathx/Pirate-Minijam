@@ -44,7 +44,7 @@ Assets {
           }
           Overrides {
             Name: "cs:AttackMinAngle"
-            Float: 30
+            Float: 50
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -80,15 +80,15 @@ Assets {
           }
           Overrides {
             Name: "cs:VisionHalfAngle"
-            Float: 85
+            Float: 0
           }
           Overrides {
             Name: "cs:VisionRadius"
-            Float: 2500
+            Float: 5000
           }
           Overrides {
             Name: "cs:HearingRadius"
-            Float: 1000
+            Float: 5000
           }
           Overrides {
             Name: "cs:SearchBonusVision"
@@ -104,7 +104,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ChaseRadius"
-            Float: 2000
+            Float: 5000
           }
           Overrides {
             Name: "cs:Team"

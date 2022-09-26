@@ -23,5 +23,13 @@ Assets {
       VirtualFolderPath: "Dependecies"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Weapon"
+      PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "Equipment"
+      PlatformAssetType: 3
+    }
   }
 }

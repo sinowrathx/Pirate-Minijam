@@ -16,9 +16,7 @@ Assets {
           }
         }
         ParentId: 5343249510736830432
-        ChildIds: 9948481548898973555
-        ChildIds: 5014549345902849091
-        ChildIds: 4199084501846311802
+        ChildIds: 3722549113154636368
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40,16 +38,56 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
+        Id: 3722549113154636368
+        Name: "StaticContext"
+        Transform {
+          Location {
+            X: -2500
+            Z: 100
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14709351426007843148
+        ChildIds: 9948481548898973555
+        ChildIds: 5014549345902849091
+        ChildIds: 4199084501846311802
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: RuntimeStatic
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
         Id: 9948481548898973555
         Name: "Props"
         Transform {
           Location {
-            X: 457.553223
+            X: 2957.55322
             Y: -1350.5022
-            Z: -154.46225
+            Z: -254.46225
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.9999924
           }
           Scale {
             X: 1.5999999
@@ -57,7 +95,7 @@ Assets {
             Z: 1.5999999
           }
         }
-        ParentId: 14709351426007843148
+        ParentId: 3722549113154636368
         ChildIds: 7287514212621829418
         ChildIds: 12139768610784824358
         ChildIds: 10637929937427715570
@@ -149,9 +187,6 @@ Assets {
         ChildIds: 5736028089994862683
         ChildIds: 15249921711252153169
         ChildIds: 6777683640193859509
-        ChildIds: 12314835188041675397
-        ChildIds: 3897895268776956131
-        ChildIds: 15011624466718208601
         ChildIds: 12043995369190538653
         ChildIds: 4094453181725887455
         Collidable_v2 {
@@ -165,7 +200,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Furniture"
+          FilePartitionName: "Furniture_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -811,7 +846,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Chairs"
+          FilePartitionName: "Chairs_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -1181,213 +1216,12 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 12314835188041675397
-        Name: "Curtains Straight"
-        Transform {
-          Location {
-            X: -506.775146
-            Y: -2708.15576
-            Z: 319.44458
-          }
-          Rotation {
-            Yaw: 180
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 0.700000048
-          }
-        }
-        ParentId: 8645669812066064696
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.0620000027
-              G: 0.00615894096
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 4624740188847677727
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2910595622499452677
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
-      Objects {
-        Id: 3897895268776956131
-        Name: "Curtains Straight"
-        Transform {
-          Location {
-            X: -631.776672
-            Y: -2708.15356
-            Z: 319.44458
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 0.700000048
-          }
-        }
-        ParentId: 8645669812066064696
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.0620000027
-              G: 0.00615894096
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10468352352600265563
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2910595622499452677
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
-      Objects {
-        Id: 15011624466718208601
-        Name: "Curtains Straight"
-        Transform {
-          Location {
-            X: -756.768372
-            Y: -2708.12695
-            Z: 319.44458
-          }
-          Rotation {
-            Yaw: 179.999954
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 0.700000048
-          }
-        }
-        ParentId: 8645669812066064696
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.0620000027
-              G: 0.00615894096
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10468352352600265563
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2910595622499452677
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
-      }
-      Objects {
         Id: 12043995369190538653
         Name: "Curtains Straight"
         Transform {
           Location {
-            X: -881.775208
-            Y: -2708.16797
+            X: -958.156311
+            Y: -2708.14893
             Z: 319.44458
           }
           Rotation {
@@ -1453,8 +1287,8 @@ Assets {
         Name: "Curtains Straight"
         Transform {
           Location {
-            X: -999.804321
-            Y: -2708.10083
+            X: -1076.18848
+            Y: -2708.08862
             Z: 319.44458
           }
           Rotation {
@@ -9630,7 +9464,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Bar_1"
+          FilePartitionName: "Bar_3"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -9669,7 +9503,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Bar Seats"
+          FilePartitionName: "Bar Seats_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -13222,7 +13056,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Dishes"
+          FilePartitionName: "Dishes_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -13264,7 +13098,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "1_3"
+          FilePartitionName: "1_7"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -13723,7 +13557,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "2"
+          FilePartitionName: "2_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -14114,7 +13948,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "1_2"
+          FilePartitionName: "1_6"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -14575,7 +14409,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "1_1"
+          FilePartitionName: "1_5"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -15036,7 +14870,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "1"
+          FilePartitionName: "1_4"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -15495,7 +15329,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Empty Glasses"
+          FilePartitionName: "Empty Glasses_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -15534,7 +15368,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Empty Glass_1"
+          FilePartitionName: "Empty Glass_3"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -15809,7 +15643,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Empty Glass"
+          FilePartitionName: "Empty Glass_2"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -16084,7 +15918,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "EmptyGlass_1"
+          FilePartitionName: "EmptyGlass_3"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -16359,7 +16193,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "EmptyGlass"
+          FilePartitionName: "EmptyGlass_2"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -17181,7 +17015,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Trunkerts"
+          FilePartitionName: "Trunkerts_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -22831,7 +22665,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "TrunkertsEmpty"
+          FilePartitionName: "TrunkertsEmpty_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -24090,7 +23924,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Nature_1"
+          FilePartitionName: "Nature"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -33997,7 +33831,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Bar_1"
+          FilePartitionName: "Bar_2"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -50535,9 +50369,9 @@ Assets {
         Name: "Candle Lit"
         Transform {
           Location {
-            X: -77.3534241
-            Y: -1100.72656
-            Z: 330.04071
+            X: -1537.66663
+            Y: -1100.69434
+            Z: 330.04068
           }
           Rotation {
             Yaw: 39.5514069
@@ -51841,9 +51675,9 @@ Assets {
         Name: "Candle Lit"
         Transform {
           Location {
-            X: -269.641449
-            Y: -592.473389
-            Z: 330.04071
+            X: -600.164612
+            Y: -592.468323
+            Z: 330.04068
           }
           Rotation {
             Yaw: 39.5513687
@@ -59025,12 +58859,12 @@ Assets {
         Name: "Building pieces"
         Transform {
           Location {
-            X: -461.746582
+            X: 2038.25342
             Y: -500
-            Z: -175
+            Z: -275
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.9999924
           }
           Scale {
             X: 1.5999999
@@ -59038,7 +58872,7 @@ Assets {
             Z: 1.5999999
           }
         }
-        ParentId: 14709351426007843148
+        ParentId: 3722549113154636368
         ChildIds: 17737375655283591236
         ChildIds: 584317392407250389
         Collidable_v2 {
@@ -60515,7 +60349,7 @@ Assets {
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Bar"
+          FilePartitionName: "Bar_1"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -61698,6 +61532,8 @@ Assets {
         Name: "Floor"
         Transform {
           Location {
+            X: 2500
+            Z: -100
           }
           Rotation {
           }
@@ -61707,7 +61543,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14709351426007843148
+        ParentId: 3722549113154636368
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

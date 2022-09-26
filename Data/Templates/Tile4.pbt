@@ -15,7 +15,199 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5343249510736830432
+        ParentId: 4781671109827199097
+        ChildIds: 3073917512379534492
+        ChildIds: 16822779034834388573
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 3073917512379534492
+        Name: "Kill Zone"
+        Transform {
+          Location {
+            X: -50
+            Y: -950
+            Z: -75
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17005884462824240221
+        ChildIds: 4009357598046662748
+        ChildIds: 5251968622935333488
+        UnregisteredParameters {
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+        InstanceHistory {
+          SelfId: 7640355486590127170
+          SubobjectId: 13648825478633622894
+          InstanceId: 16189104946362032288
+          TemplateId: 1130321914764618900
+          WasRoot: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 4009357598046662748
+        Name: "KillTrigger"
+        Transform {
+          Location {
+            X: 25
+            Y: 675
+            Z: -175
+          }
+          Rotation {
+          }
+          Scale {
+            X: 50
+            Y: 50
+            Z: 3
+          }
+        }
+        ParentId: 3073917512379534492
+        UnregisteredParameters {
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+          InteractionTemplate {
+          }
+          BreadcrumbTemplate {
+          }
+        }
+        InstanceHistory {
+          SelfId: 7778767117378525320
+          SubobjectId: 13591331349196528036
+          InstanceId: 16189104946362032288
+          TemplateId: 1130321914764618900
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 5251968622935333488
+        Name: "KillZoneServer"
+        Transform {
+          Location {
+            Z: -6.10351562e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3073917512379534492
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:KillTrigger"
+            ObjectReference {
+              SubObjectId: 4009357598046662748
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 3908110495107565482
+          }
+        }
+        InstanceHistory {
+          SelfId: 3998606899065328026
+          SubobjectId: 16145483188601114806
+          InstanceId: 16189104946362032288
+          TemplateId: 1130321914764618900
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 16822779034834388573
+        Name: "StaticContext"
+        Transform {
+          Location {
+            X: 473.533569
+            Y: 467.908112
+            Z: -450
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17005884462824240221
         ChildIds: 12338528082982969494
         ChildIds: 9031322997681043676
         ChildIds: 10721485812008330882
@@ -62,7 +254,6 @@ Assets {
         ChildIds: 11877040259299821899
         ChildIds: 9572568121107990305
         ChildIds: 5514098637515438278
-        ChildIds: 16189104946362032288
         ChildIds: 3743289247295604656
         ChildIds: 11567079688311535168
         ChildIds: 1008883895741249515
@@ -70,6 +261,7 @@ Assets {
         ChildIds: 9424501745837097969
         ChildIds: 2459135613465207357
         ChildIds: 13908447877385279772
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -82,8 +274,8 @@ Assets {
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
+          Type: RuntimeStatic
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -95,7 +287,9 @@ Assets {
         Name: "Ambient Occlusion Post Process"
         Transform {
           Location {
-            Z: 800
+            X: -473.533569
+            Y: -467.908203
+            Z: 1250
           }
           Rotation {
           }
@@ -105,7 +299,7 @@ Assets {
             Z: 15
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "bp:Unbounded"
@@ -142,13 +336,14 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: -1600
-            Z: 400
+            X: -2073.53369
+            Y: -467.908203
+            Z: 850
           }
           Rotation {
             Pitch: 90
-            Yaw: -96.2085571
-            Roll: 83.7914734
+            Yaw: 25.2393837
+            Roll: -154.760605
           }
           Scale {
             X: 7
@@ -156,7 +351,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -198,8 +393,9 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 2450
-            Z: 400
+            X: 1976.46643
+            Y: -467.908203
+            Z: 850
           }
           Rotation {
             Pitch: 90
@@ -210,7 +406,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -252,7 +448,9 @@ Assets {
         Name: "Lava"
         Transform {
           Location {
-            Z: -126.02713
+            X: -473.533569
+            Y: -467.908203
+            Z: 323.97287
           }
           Rotation {
           }
@@ -262,7 +460,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -312,9 +510,9 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: -1150
-            Y: 2499.99976
-            Z: 50
+            X: -1623.53357
+            Y: 2032.0918
+            Z: 500
           }
           Rotation {
           }
@@ -324,7 +522,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 6075660859421495632
         ChildIds: 598767369877420833
         ChildIds: 8695815216332726848
@@ -347,9 +545,9 @@ Assets {
           FilePartitionName: "Stalker wood fence good_11"
         }
         InstanceHistory {
-          SelfId: 13641524725658665368
+          SelfId: 9166408133536056200
           SubobjectId: 10865296382200509250
-          InstanceId: 7201874666734561032
+          InstanceId: 10506599735001667295
           TemplateId: 1093322286209447941
           WasRoot: true
         }
@@ -404,9 +602,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 4817070156567611122
+          SelfId: 9276388421237327074
           SubobjectId: 7584216535056200744
-          InstanceId: 7201874666734561032
+          InstanceId: 10506599735001667295
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -463,9 +661,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 2217883546552003715
+          SelfId: 15898393339349085843
           SubobjectId: 3845694053716352601
-          InstanceId: 7201874666734561032
+          InstanceId: 10506599735001667295
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -522,9 +720,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 7936753528100091362
+          SelfId: 12412187340062537714
           SubobjectId: 5024931142001346360
-          InstanceId: 7201874666734561032
+          InstanceId: 10506599735001667295
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -581,9 +779,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 12252236287252516063
+          SelfId: 7524774091315384015
           SubobjectId: 9336394086588120581
-          InstanceId: 7201874666734561032
+          InstanceId: 10506599735001667295
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -641,9 +839,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 10437047399604516819
+          SelfId: 5958867691634406851
           SubobjectId: 13496989323268277513
-          InstanceId: 7201874666734561032
+          InstanceId: 10506599735001667295
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -671,7 +869,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -815,9 +1013,9 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: -2400
-                  Y: 2500
-                  Z: 50
+                  X: -2873.53369
+                  Y: 2032.0918
+                  Z: 500
                 }
               }
               Overrides {
@@ -933,12 +1131,12 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: 2450
-            Y: -1400
-            Z: 50
+            X: 1976.46643
+            Y: -1867.9082
+            Z: 500
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.9999924
           }
           Scale {
             X: 3.5
@@ -946,7 +1144,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 13189796570107565528
         ChildIds: 16939648457778282409
         ChildIds: 7479299669844410697
@@ -982,9 +1180,9 @@ Assets {
           FilePartitionName: "Stalker wood fence good_10"
         }
         InstanceHistory {
-          SelfId: 6776484998257739024
+          SelfId: 11272255760548382464
           SubobjectId: 10865296382200509250
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
           WasRoot: true
         }
@@ -1039,9 +1237,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 11638194844096283258
+          SelfId: 7198684439308173418
           SubobjectId: 7584216535056200744
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1098,9 +1296,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 18274769529266972683
+          SelfId: 4609706656210348571
           SubobjectId: 3845694053716352601
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1157,9 +1355,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 8161492266738570987
+          SelfId: 12909146318406948091
           SubobjectId: 13366914266511417529
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1216,9 +1414,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 10196013276673257834
+          SelfId: 5699997858015114106
           SubobjectId: 5024931142001346360
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1277,9 +1475,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 5283330089582004311
+          SelfId: 10031725763987229255
           SubobjectId: 9336394086588120581
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1336,9 +1534,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 14605814074983086284
+          SelfId: 637179443046562524
           SubobjectId: 176175615035772574
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1407,9 +1605,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 4604528153341321361
+          SelfId: 18267550214167274113
           SubobjectId: 17808694969339123395
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1466,9 +1664,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 12868880752104368727
+          SelfId: 8138711561695275079
           SubobjectId: 8814901892703689733
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1529,9 +1727,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 9134263259187939491
+          SelfId: 13593726102122023603
           SubobjectId: 13114706707370737393
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1588,9 +1786,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 15117579026198664322
+          SelfId: 1416839277149116050
           SubobjectId: 1805888796495504080
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1647,9 +1845,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 14990886209190383998
+          SelfId: 1328458823561941870
           SubobjectId: 1786226840387921708
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1706,9 +1904,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 368936046899877965
+          SelfId: 14374162585265183325
           SubobjectId: 14834040427463749151
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1765,9 +1963,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 12271141997068759394
+          SelfId: 7506985416719201138
           SubobjectId: 7100059968613009200
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1836,9 +2034,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 17937341658427629701
+          SelfId: 4218690756515848853
           SubobjectId: 3471604053202065111
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1898,9 +2096,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 8326399291906732891
+          SelfId: 12819674312119611723
           SubobjectId: 13496989323268277513
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -1958,9 +2156,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 1528750327420623027
+          SelfId: 15515683041532435107
           SubobjectId: 15993573237839916769
-          InstanceId: 17478318776775843917
+          InstanceId: 50582216570720666
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2108,12 +2306,12 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: 2450
-            Y: -150
-            Z: 50
+            X: 1976.46643
+            Y: -617.908203
+            Z: 500
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.9999924
           }
           Scale {
             X: 3.5
@@ -2121,7 +2319,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 10483981777312631160
         ChildIds: 18405823272139052449
         ChildIds: 4737444397720526313
@@ -2180,9 +2378,9 @@ Assets {
           FilePartitionName: "Stalker wood fence good_9"
         }
         InstanceHistory {
-          SelfId: 8682921164561226160
+          SelfId: 13410065047587675040
           SubobjectId: 10865296382200509250
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
           WasRoot: true
         }
@@ -2237,9 +2435,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 9797065820192005850
+          SelfId: 5013591204472200394
           SubobjectId: 7584216535056200744
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2297,9 +2495,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 16854194024532034051
+          SelfId: 3135580650363584531
           SubobjectId: 527070274944706801
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2356,9 +2554,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 6284340080811362891
+          SelfId: 10760093288024115291
           SubobjectId: 13366914266511417529
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2415,9 +2613,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 12324808421659946442
+          SelfId: 7597416588026081242
           SubobjectId: 5024931142001346360
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2474,9 +2672,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 8009422419395941623
+          SelfId: 12484785856174479079
           SubobjectId: 9336394086588120581
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2545,9 +2743,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 1842981659310292017
+          SelfId: 15849970124720389665
           SubobjectId: 17808694969339123395
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2604,9 +2802,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 10728266063294035703
+          SelfId: 6235098389348365543
           SubobjectId: 8814901892703689733
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2663,9 +2861,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 17850415144026867746
+          SelfId: 3881144278780824114
           SubobjectId: 1805888796495504080
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2722,9 +2920,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 17762008283970162142
+          SelfId: 3754495460428648398
           SubobjectId: 1786226840387921708
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2781,9 +2979,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 14674791500123005357
+          SelfId: 703305677300048829
           SubobjectId: 2671182873880529759
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2843,9 +3041,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 2552343178523165933
+          SelfId: 16216986508509251325
           SubobjectId: 14834040427463749151
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2902,9 +3100,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 10105757991864577474
+          SelfId: 5646155546925723602
           SubobjectId: 7100059968613009200
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -2962,9 +3160,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 6194797984956559355
+          SelfId: 10925070952515038699
           SubobjectId: 13496989323268277513
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -3022,9 +3220,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 3693569254514557971
+          SelfId: 17377069330782078467
           SubobjectId: 15993573237839916769
-          InstanceId: 11673729300740614069
+          InstanceId: 5781963185981707874
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -4822,12 +5020,12 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: 2450
-            Y: 1100
-            Z: 50
+            X: 1976.46643
+            Y: 632.091797
+            Z: 500
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.9999924
           }
           Scale {
             X: 3.5
@@ -4835,7 +5033,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 14135511298321452685
         ChildIds: 1507353290509130268
         ChildIds: 16778094581103885725
@@ -4865,9 +5063,9 @@ Assets {
           FilePartitionName: "Stalker wood fence good_8"
         }
         InstanceHistory {
-          SelfId: 3254439567452757573
+          SelfId: 17244254784438115413
           SubobjectId: 10865296382200509250
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
           WasRoot: true
         }
@@ -4922,9 +5120,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 15178206291680139567
+          SelfId: 1208693010360785727
           SubobjectId: 7584216535056200744
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -4982,9 +5180,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 172138721281904062
+          SelfId: 13836886090874998702
           SubobjectId: 13366914266511417529
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5041,9 +5239,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 18329503926418893375
+          SelfId: 4339934448132794415
           SubobjectId: 5024931142001346360
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5100,9 +5298,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 4211663903588799234
+          SelfId: 17876801047901638930
           SubobjectId: 9336394086588120581
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5159,9 +5357,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 13371952814823154585
+          SelfId: 8932689660567445897
           SubobjectId: 176175615035772574
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5218,9 +5416,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 13958779933265178882
+          SelfId: 275420737360360210
           SubobjectId: 8814901892703689733
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5277,9 +5475,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 1000804831429481462
+          SelfId: 14953748906241266150
           SubobjectId: 13114706707370737393
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5336,9 +5534,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 11739917482056634327
+          SelfId: 6956198199700655559
           SubobjectId: 1805888796495504080
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5395,9 +5593,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 11757400189832104491
+          SelfId: 7011925374039836731
           SubobjectId: 1786226840387921708
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5454,9 +5652,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 15666655420305173047
+          SelfId: 1949730772046850087
           SubobjectId: 7100059968613009200
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5514,9 +5712,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 48887253019125774
+          SelfId: 14035573127774415390
           SubobjectId: 13496989323268277513
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5574,9 +5772,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 7356569425194959846
+          SelfId: 11849596506539688438
           SubobjectId: 15993573237839916769
-          InstanceId: 1196458899748904693
+          InstanceId: 16331863245319483170
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5592,12 +5790,12 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: 2450
-            Y: 2350
-            Z: 50
+            X: 1976.46643
+            Y: 1882.0918
+            Z: 500
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.9999924
           }
           Scale {
             X: 3.5
@@ -5605,7 +5803,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 17244295099828678503
         ChildIds: 12920301334174844182
         ChildIds: 4580255870044388342
@@ -5636,9 +5834,9 @@ Assets {
           FilePartitionName: "Stalker wood fence good_7"
         }
         InstanceHistory {
-          SelfId: 455268379092844463
+          SelfId: 14138068042297851327
           SubobjectId: 10865296382200509250
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
           WasRoot: true
         }
@@ -5693,9 +5891,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 18003339152883792069
+          SelfId: 4304671882260118229
           SubobjectId: 7584216535056200744
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5752,9 +5950,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 11945409945328308916
+          SelfId: 7467934488443130020
           SubobjectId: 3845694053716352601
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5811,9 +6009,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 2961372837114129492
+          SelfId: 16968746665782636100
           SubobjectId: 13366914266511417529
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5870,9 +6068,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 15358432599079373781
+          SelfId: 1675880865011009989
           SubobjectId: 5024931142001346360
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5929,9 +6127,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 1227707704303842024
+          SelfId: 15234622493314953464
           SubobjectId: 9336394086588120581
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -5988,9 +6186,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 10586238252927484531
+          SelfId: 5804064931231416419
           SubobjectId: 176175615035772574
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6047,9 +6245,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 2781242251574899228
+          SelfId: 16500349834135416844
           SubobjectId: 13114706707370737393
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6107,9 +6305,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 9914664792765165117
+          SelfId: 5472443982227844141
           SubobjectId: 1805888796495504080
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6166,9 +6364,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 9822854962243775425
+          SelfId: 5346963926376901073
           SubobjectId: 1786226840387921708
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6228,9 +6426,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 13081210859809638322
+          SelfId: 8641345761521649058
           SubobjectId: 2671182873880529759
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6287,9 +6485,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 17442515848383712221
+          SelfId: 3491893246348790221
           SubobjectId: 7100059968613009200
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6347,9 +6545,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 3158933276711406052
+          SelfId: 16839865845625097204
           SubobjectId: 13496989323268277513
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6407,9 +6605,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 5579026783107965452
+          SelfId: 10306873242793975836
           SubobjectId: 15993573237839916769
-          InstanceId: 10749543575052630355
+          InstanceId: 7427226322901780612
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -6438,7 +6636,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -6582,15 +6780,14 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: -1600
-                  Y: -1300
-                  Z: -450
+                  X: -2073.53369
+                  Y: -1767.9082
                 }
               }
               Overrides {
                 Name: "Rotation"
                 Rotator {
-                  Yaw: -89.9999847
+                  Yaw: -89.9999771
                 }
               }
               Overrides {
@@ -6714,7 +6911,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -6858,15 +7055,14 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: -1600
-                  Y: -50
-                  Z: -450
+                  X: -2073.53369
+                  Y: -517.908203
                 }
               }
               Overrides {
                 Name: "Rotation"
                 Rotator {
-                  Yaw: -89.9999847
+                  Yaw: -89.9999771
                 }
               }
               Overrides {
@@ -6990,7 +7186,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -7134,15 +7330,14 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: -1600
-                  Y: 1200
-                  Z: -450
+                  X: -2073.53369
+                  Y: 732.091797
                 }
               }
               Overrides {
                 Name: "Rotation"
                 Rotator {
-                  Yaw: -89.9999847
+                  Yaw: -89.9999771
                 }
               }
               Overrides {
@@ -7266,7 +7461,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -7410,15 +7605,14 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: -1600
-                  Y: 2450
-                  Z: -450
+                  X: -2073.53369
+                  Y: 1982.0918
                 }
               }
               Overrides {
                 Name: "Rotation"
                 Rotator {
-                  Yaw: -89.9999847
+                  Yaw: -89.9999771
                 }
               }
               Overrides {
@@ -7541,7 +7735,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -7685,9 +7879,9 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: 1350
-                  Y: 2499.99927
-                  Z: 50
+                  X: 876.466431
+                  Y: 2032.0918
+                  Z: 500
                 }
               }
               Overrides {
@@ -7803,9 +7997,9 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: 100
-            Y: 2499.99951
-            Z: 50
+            X: -373.533569
+            Y: 2032.0918
+            Z: 500
           }
           Rotation {
           }
@@ -7815,7 +8009,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 1479698033654897902
         ChildIds: 12274745152813438118
         ChildIds: 1272707605943040641
@@ -7846,9 +8040,9 @@ Assets {
           FilePartitionName: "Stalker wood fence good_6"
         }
         InstanceHistory {
-          SelfId: 10635674869025198335
+          SelfId: 5907720121877992175
           SubobjectId: 10865296382200509250
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
           WasRoot: true
         }
@@ -7903,9 +8097,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 144202118332484428
+          SelfId: 13863696793951127900
           SubobjectId: 527070274944706801
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -7962,9 +8156,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 13605402215684342532
+          SelfId: 9130459924136018196
           SubobjectId: 13366914266511417529
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8021,9 +8215,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 513742712875592995
+          SelfId: 14214732139644710707
           SubobjectId: 176175615035772574
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8080,9 +8274,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 9152469059783868344
+          SelfId: 13646447597720141224
           SubobjectId: 8814901892703689733
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8139,9 +8333,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 12920832602342808908
+          SelfId: 8157695803525242716
           SubobjectId: 13114706707370737393
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8198,9 +8392,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 2044360201180987757
+          SelfId: 16013383083670242173
           SubobjectId: 1805888796495504080
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8257,9 +8451,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 2132801146324583569
+          SelfId: 16139997817254299265
           SubobjectId: 1786226840387921708
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8316,9 +8510,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 2324202811366025442
+          SelfId: 16295373598406961906
           SubobjectId: 2671182873880529759
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8375,9 +8569,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 14451437281278201250
+          SelfId: 785913818073026482
           SubobjectId: 14834040427463749151
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8434,9 +8628,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 7482926919743726733
+          SelfId: 11942776230747874973
           SubobjectId: 7100059968613009200
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8505,9 +8699,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 3854331351507694954
+          SelfId: 17805161612600457082
           SubobjectId: 3471604053202065111
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8580,9 +8774,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 15593660988385879818
+          SelfId: 1874097620136731930
           SubobjectId: 15940236359205471415
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8640,9 +8834,9 @@ Assets {
           }
         }
         InstanceHistory {
-          SelfId: 15610706181210393948
+          SelfId: 1928014838764048204
           SubobjectId: 15993573237839916769
-          InstanceId: 6534199404106139791
+          InstanceId: 12147019281459394904
           TemplateId: 1093322286209447941
         }
         Relevance {
@@ -8658,9 +8852,9 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: 100
-            Y: -2500
-            Z: 50
+            X: -373.533569
+            Y: -2967.9082
+            Z: 500
           }
           Rotation {
           }
@@ -8670,7 +8864,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 14131434289522327371
         ChildIds: 12050254791597912087
         ChildIds: 1731660121925703991
@@ -9804,7 +9998,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -9948,9 +10142,9 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: 1350
-                  Y: -2500.00024
-                  Z: 50
+                  X: 876.466431
+                  Y: -2967.9082
+                  Z: 500
                 }
               }
               Overrides {
@@ -10078,7 +10272,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         TemplateInstance {
           ParameterOverrideMap {
             key: 176175615035772574
@@ -10222,9 +10416,9 @@ Assets {
               Overrides {
                 Name: "Position"
                 Vector {
-                  X: -2400
-                  Y: -2499.99951
-                  Z: 50
+                  X: -2873.53369
+                  Y: -2967.9082
+                  Z: 500
                 }
               }
               Overrides {
@@ -10340,9 +10534,9 @@ Assets {
         Name: "Stalker wood fence good"
         Transform {
           Location {
-            X: -1150
-            Y: -2499.99976
-            Z: 50
+            X: -1623.53357
+            Y: -2967.9082
+            Z: 500
           }
           Rotation {
           }
@@ -10352,7 +10546,7 @@ Assets {
             Z: 3.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         ChildIds: 1706126911668479968
         ChildIds: 2188068791648795139
         ChildIds: 1569453221503397927
@@ -11408,8 +11602,9 @@ Assets {
         Name: "Liquid Bubbling VFX"
         Transform {
           Location {
-            X: 400
-            Z: -100
+            X: -73.5335693
+            Y: -467.908203
+            Z: 350
           }
           Rotation {
           }
@@ -11419,7 +11614,7 @@ Assets {
             Z: -42.5
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -11432,6 +11627,10 @@ Assets {
               G: 0.24278146
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -11469,9 +11668,9 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -200
-            Y: -300
-            Z: 900
+            X: -673.533569
+            Y: -767.908203
+            Z: 1350
           }
           Rotation {
             Pitch: -4.99999857
@@ -11482,7 +11681,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11532,12 +11731,12 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 2600
-            Y: -1500
-            Z: 500
+            X: 2126.46631
+            Y: -1967.9082
+            Z: 950
           }
           Rotation {
-            Yaw: 84.9999847
+            Yaw: 84.9999771
           }
           Scale {
             X: 3
@@ -11545,7 +11744,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11595,12 +11794,12 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 2570.46582
-            Y: -1076.46094
-            Z: 178.382507
+            X: 2096.93213
+            Y: -1544.36914
+            Z: 628.382507
           }
           Rotation {
-            Yaw: 84.9999847
+            Yaw: 84.9999771
           }
           Scale {
             X: 3
@@ -11608,7 +11807,7 @@ Assets {
             Z: 3.95032811
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11658,12 +11857,12 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 2574.21289
-            Y: -2180.98926
-            Z: 300
+            X: 2100.6792
+            Y: -2648.89746
+            Z: 750
           }
           Rotation {
-            Yaw: 84.9999847
+            Yaw: 84.9999771
           }
           Scale {
             X: 3
@@ -11671,7 +11870,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11721,12 +11920,12 @@ Assets {
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: 3245.40479
-            Y: -2540.85938
-            Z: 200
+            X: 2771.87109
+            Y: -3008.76758
+            Z: 650
           }
           Rotation {
-            Yaw: 84.9999847
+            Yaw: 84.9999771
           }
           Scale {
             X: 3
@@ -11734,7 +11933,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11784,12 +11983,12 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: 3851.83447
-            Y: -2493.5293
-            Z: 200
+            X: 3378.30078
+            Y: -2961.4375
+            Z: 650
           }
           Rotation {
-            Yaw: 84.9999847
+            Yaw: 84.9999771
           }
           Scale {
             X: 3
@@ -11797,7 +11996,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11847,12 +12046,12 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 2500
-            Y: 200
-            Z: 300
+            X: 2026.46643
+            Y: -267.908203
+            Z: 750
           }
           Rotation {
-            Yaw: -84.9999847
+            Yaw: -84.9999771
           }
           Scale {
             X: 3
@@ -11860,7 +12059,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11910,12 +12109,12 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 2500
-            Y: 800
-            Z: 300
+            X: 2026.46643
+            Y: 332.091797
+            Z: 750
           }
           Rotation {
-            Yaw: -84.9999847
+            Yaw: -84.9999771
           }
           Scale {
             X: 3
@@ -11923,7 +12122,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -11973,12 +12172,12 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 2500
-            Y: 1400
-            Z: 300
+            X: 2026.46643
+            Y: 932.091797
+            Z: 750
           }
           Rotation {
-            Yaw: -84.9999847
+            Yaw: -84.9999771
           }
           Scale {
             X: 3
@@ -11986,7 +12185,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12036,12 +12235,12 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 2570.46582
-            Y: 1500
-            Z: 192.030609
+            X: 2096.93213
+            Y: 1032.0918
+            Z: 642.03064
           }
           Rotation {
-            Yaw: 84.9999771
+            Yaw: 84.9999695
           }
           Scale {
             X: 3
@@ -12049,7 +12248,7 @@ Assets {
             Z: 4.19340944
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12099,12 +12298,12 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 2600
-            Y: -1100
-            Z: 500
+            X: 2126.46631
+            Y: -1567.9082
+            Z: 950
           }
           Rotation {
-            Yaw: 84.9999771
+            Yaw: 84.9999695
           }
           Scale {
             X: 3
@@ -12112,7 +12311,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12162,12 +12361,12 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 1500
-            Y: 2500
-            Z: 500
+            X: 1026.46643
+            Y: 2032.0918
+            Z: 950
           }
           Rotation {
-            Yaw: -5.00000238
+            Yaw: -5.00000525
           }
           Scale {
             X: 3
@@ -12175,7 +12374,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12225,12 +12424,12 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: 1923.53906
-            Y: 2529.5332
-            Z: 300
+            X: 1450.00549
+            Y: 2061.625
+            Z: 750
           }
           Rotation {
-            Yaw: -5.00000238
+            Yaw: -5.00000525
           }
           Scale {
             X: 3
@@ -12238,7 +12437,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12288,12 +12487,12 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 917.174622
-            Y: 2525.78711
-            Z: 300
+            X: 443.641052
+            Y: 2057.87891
+            Z: 750
           }
           Rotation {
-            Yaw: -5.00000238
+            Yaw: -5.00000525
           }
           Scale {
             X: 3
@@ -12301,7 +12500,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12351,14 +12550,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: -624.36377
-            Y: 2459.07031
-            Z: 615
+            X: -1097.89734
+            Y: 1991.16211
+            Z: 1065
           }
           Rotation {
             Pitch: -12.2695255
-            Yaw: 4.1825676
-            Roll: -1.61474621
+            Yaw: 4.1825695
+            Roll: -1.61474633
           }
           Scale {
             X: 3
@@ -12366,7 +12565,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12416,12 +12615,12 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: -1300.00024
-            Y: 2459.07031
-            Z: 300
+            X: -1773.53381
+            Y: 1991.16211
+            Z: 750
           }
           Rotation {
-            Yaw: 5.00000238
+            Yaw: 5.00000525
           }
           Scale {
             X: 3
@@ -12429,7 +12628,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12479,12 +12678,12 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: -1523.00415
-            Y: 2459.07031
-            Z: 595.095337
+            X: -1996.53772
+            Y: 1991.16211
+            Z: 1045.09534
           }
           Rotation {
-            Yaw: 5.00000238
+            Yaw: 5.00000525
           }
           Scale {
             X: 3
@@ -12492,7 +12691,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12542,14 +12741,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: -2000
-            Y: 2529.53516
-            Z: 465.97641
+            X: -2473.53369
+            Y: 2061.62695
+            Z: 915.97644
           }
           Rotation {
-            Pitch: 82.4339371
-            Yaw: 138.543106
-            Roll: -41.2068253
+            Pitch: 82.4338913
+            Yaw: 138.54306
+            Roll: -41.2068214
           }
           Scale {
             X: 3
@@ -12557,7 +12756,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12607,12 +12806,12 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 1900
-            Y: 2500
-            Z: 500
+            X: 1426.46643
+            Y: 2032.0918
+            Z: 950
           }
           Rotation {
-            Yaw: -5.00000238
+            Yaw: -5.00000525
           }
           Scale {
             X: 3
@@ -12620,7 +12819,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12670,14 +12869,14 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 789.02533
-            Y: 2459.07031
-            Z: 615
+            X: 315.49176
+            Y: 1991.16211
+            Z: 1065
           }
           Rotation {
-            Pitch: -12.2695255
-            Yaw: -175.817429
-            Roll: -1.61474621
+            Pitch: -12.2695189
+            Yaw: -175.817413
+            Roll: -1.61474609
           }
           Scale {
             X: 3
@@ -12685,7 +12884,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12735,14 +12934,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: -2365.48242
-            Y: 2529.53516
-            Z: 465.97641
+            X: -2839.01611
+            Y: 2061.62695
+            Z: 915.97644
           }
           Rotation {
-            Pitch: 82.4338913
-            Yaw: 138.543106
-            Roll: -41.2067719
+            Pitch: 82.4338074
+            Yaw: 138.54306
+            Roll: -41.2067337
           }
           Scale {
             X: 3
@@ -12750,7 +12949,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12800,13 +12999,13 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: -1940.99646
-            Y: 931.5
-            Z: 225.099564
+            X: -2414.53
+            Y: 463.591797
+            Z: 675.099548
           }
           Rotation {
             Pitch: -1.37618744
-            Yaw: 107.740501
+            Yaw: 107.740509
             Roll: -70.1573181
           }
           Scale {
@@ -12815,7 +13014,7 @@ Assets {
             Z: 6.10846472
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12865,14 +13064,14 @@ Assets {
         Name: "Rock 02"
         Transform {
           Location {
-            X: -1940.99646
-            Y: -691.203125
-            Z: 225.099564
+            X: -2414.53
+            Y: -1159.11133
+            Z: 675.099548
           }
           Rotation {
-            Pitch: -1.37617373
-            Yaw: -107.740532
-            Roll: 70.1573
+            Pitch: -1.37616694
+            Yaw: -107.740547
+            Roll: 70.1573105
           }
           Scale {
             X: 6.10843086
@@ -12880,7 +13079,7 @@ Assets {
             Z: 6.10846472
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -12930,9 +13129,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: -125.000061
-            Y: -2100
-            Z: 25
+            X: -598.53363
+            Y: -2567.9082
+            Z: 475
           }
           Rotation {
           }
@@ -12942,7 +13141,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -12984,9 +13183,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: -125.000061
-            Y: -1700
-            Z: 25
+            X: -598.53363
+            Y: -2167.9082
+            Z: 475
           }
           Rotation {
           }
@@ -12996,7 +13195,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13034,81 +13233,13 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 16189104946362032288
-        Name: "Kill Zone"
-        Transform {
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17005884462824240221
-        TemplateInstance {
-          ParameterOverrideMap {
-            key: 13591331349196528036
-            value {
-              Overrides {
-                Name: "Position"
-                Vector {
-                  X: 25
-                  Y: 675
-                  Z: -175
-                }
-              }
-              Overrides {
-                Name: "Scale"
-                Vector {
-                  X: 50
-                  Y: 50
-                  Z: 3
-                }
-              }
-            }
-          }
-          ParameterOverrideMap {
-            key: 13648825478633622894
-            value {
-              Overrides {
-                Name: "Name"
-                String: "Kill Zone"
-              }
-              Overrides {
-                Name: "Position"
-                Vector {
-                  X: -50
-                  Y: -950
-                  Z: -75
-                }
-              }
-              Overrides {
-                Name: "Rotation"
-                Rotator {
-                }
-              }
-              Overrides {
-                Name: "Scale"
-                Vector {
-                  X: 1
-                  Y: 1
-                  Z: 1
-                }
-              }
-            }
-          }
-          TemplateAsset {
-            Id: 1130321914764618900
-          }
-        }
-      }
-      Objects {
         Id: 3743289247295604656
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: -100
-            Y: -700
-            Z: 25
+            X: -573.533569
+            Y: -1167.9082
+            Z: 475
           }
           Rotation {
           }
@@ -13118,7 +13249,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13160,9 +13291,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: 900
-            Y: -700
-            Z: 25
+            X: 426.466431
+            Y: -1167.9082
+            Z: 475
           }
           Rotation {
           }
@@ -13172,7 +13303,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13214,9 +13345,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: 900
-            Y: 300
-            Z: 25
+            X: 426.466431
+            Y: -167.908203
+            Z: 475
           }
           Rotation {
           }
@@ -13226,7 +13357,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13268,9 +13399,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: 900
-            Y: 1300
-            Z: 25
+            X: 426.466431
+            Y: 832.091797
+            Z: 475
           }
           Rotation {
           }
@@ -13280,7 +13411,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13322,9 +13453,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: -100
-            Y: 1300
-            Z: 25
+            X: -573.533569
+            Y: 832.091797
+            Z: 475
           }
           Rotation {
           }
@@ -13334,7 +13465,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13376,9 +13507,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: -125.000061
-            Y: 2700
-            Z: 25
+            X: -598.53363
+            Y: 2232.0918
+            Z: 475
           }
           Rotation {
           }
@@ -13388,7 +13519,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13430,9 +13561,9 @@ Assets {
         Name: "Fantasy Castle Floor 01 4m"
         Transform {
           Location {
-            X: -125.000061
-            Y: 2300
-            Z: 25
+            X: -598.53363
+            Y: 1832.0918
+            Z: 475
           }
           Rotation {
           }
@@ -13442,7 +13573,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17005884462824240221
+        ParentId: 16822779034834388573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
