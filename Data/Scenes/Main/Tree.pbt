@@ -24,6 +24,8 @@ Objects {
   ChildIds: 11855153401888686476
   ChildIds: 7597521458731552716
   ChildIds: 15553700023149581499
+  ChildIds: 8517282237624008684
+  ChildIds: 2333693019354798694
   ChildIds: 4000230752702302282
   ChildIds: 9945816222725720460
   ChildIds: 2241350299862481787
@@ -2305,6 +2307,72 @@ Objects {
         }
       }
     }
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 2333693019354798694
+  Name: "Cannon Spawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Cannon Spawner"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 8517282237624008684
+  Name: "Forge Spawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Forge Spawner"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
 }
@@ -11724,11 +11792,6 @@ Objects {
   Id: 14316598451083299256
   Name: "Forge System 3.0"
   Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 33.1637611
-    }
     Scale {
       X: 1
       Y: 1
@@ -11736,59 +11799,20 @@ Objects {
     }
   }
   ParentId: 11855153401888686476
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 3942658824368163162
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -47.2446213
-            Y: 176.449738
-            Z: -22.8712769
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 102.65274
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11297684210881819848
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -199.28241
-            Y: -25.5872974
-            Z: 100
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3
-            Y: 2
-            Z: 2
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 11336574312508859973
       value {
         Overrides {
           Name: "Name"
           String: "Forge System 3.0"
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -1.83621216
-          }
         }
         Overrides {
           Name: "Position"
@@ -11799,11 +11823,9 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+          Name: "Rotation"
+          Rotator {
+            Yaw: -1.83621216
           }
         }
       }

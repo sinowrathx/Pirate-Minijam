@@ -506,6 +506,7 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: -90
           }
           Scale {
             X: 1

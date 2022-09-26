@@ -15,12 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 12878977886379947355
-        ChildIds: 11785880979598109330
-        ChildIds: 2417576126017400565
+        ParentId: 11855153401888686476
+        ChildIds: 10269674107656972872
         ChildIds: 5996656240847012061
         ChildIds: 8961814113379567885
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -42,13 +41,55 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
+        Id: 10269674107656972872
+        Name: "StaticContext"
+        Transform {
+          Location {
+            X: 60
+            Y: 170
+            Z: 60
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11336574312508859973
+        ChildIds: 12878977886379947355
+        ChildIds: 11785880979598109330
+        ChildIds: 2417576126017400565
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: RuntimeStatic
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
         Id: 12878977886379947355
         Name: "Cylinder - Rounded"
         Transform {
           Location {
-            X: 30
-            Y: 345
-            Z: 170
+            X: -30.0000019
+            Y: 175
+            Z: 110
           }
           Rotation {
           }
@@ -58,7 +99,7 @@ Assets {
             Z: 1.80000007
           }
         }
-        ParentId: 11336574312508859973
+        ParentId: 10269674107656972872
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -109,12 +150,12 @@ Assets {
         Name: "Cube - Arched"
         Transform {
           Location {
-            X: 155.868408
-            Y: 173.898376
-            Z: 65
+            X: 95.8684082
+            Y: 3.89838529
+            Z: 5
           }
           Rotation {
-            Yaw: -44.9999962
+            Yaw: -44.9999924
           }
           Scale {
             X: 2.39999986
@@ -122,7 +163,7 @@ Assets {
             Z: 1.80000007
           }
         }
-        ParentId: 11336574312508859973
+        ParentId: 10269674107656972872
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -173,8 +214,8 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            Y: -5
-            Z: 60
+            X: -60.0000076
+            Y: -175.000031
           }
           Rotation {
           }
@@ -184,7 +225,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11336574312508859973
+        ParentId: 10269674107656972872
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -252,6 +293,9 @@ Assets {
         ChildIds: 10457793200964319132
         ChildIds: 2865687195634360856
         ChildIds: 2064407932601800513
+        ChildIds: 15808586364153066254
+        ChildIds: 16137202844361757306
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -282,14 +326,14 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: -25
-            Y: -20
+            X: -199.28241
+            Y: -25.5872974
             Z: 100
           }
           Rotation {
           }
           Scale {
-            X: 2
+            X: 3
             Y: 2
             Z: 2
           }
@@ -10918,12 +10962,12 @@ Assets {
         Name: "Rockpile"
         Transform {
           Location {
-            X: 200.964142
-            Y: -182.920776
+            X: -47.2446213
+            Y: 176.449738
             Z: -22.8712769
           }
           Rotation {
-            Yaw: 112.652725
+            Yaw: 102.65274
           }
           Scale {
             X: 1
@@ -11956,7 +12000,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -12020,7 +12064,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -12084,7 +12128,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -12148,7 +12192,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -12212,7 +12256,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -12276,7 +12320,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -12340,7 +12384,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -12404,7 +12448,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -13595,6 +13639,112 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
+        Id: 15808586364153066254
+        Name: "World Text"
+        Transform {
+          Location {
+            X: 136.723877
+            Y: 104.434601
+            Z: 315
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 3
+            Y: 3
+            Z: 3
+          }
+        }
+        ParentId: 5996656240847012061
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "FORGE"
+          FontAsset {
+            Id: 1953844252455219690
+          }
+          Color {
+            R: 0.74
+            G: 0.205827802
+            A: 1
+          }
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:center"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 16137202844361757306
+        Name: "World Text"
+        Transform {
+          Location {
+            X: 137.109177
+            Y: 104.446953
+            Z: 315
+          }
+          Rotation {
+            Yaw: -179.999969
+          }
+          Scale {
+            X: 3.15
+            Y: 3.15
+            Z: 3.15
+          }
+        }
+        ParentId: 5996656240847012061
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Text {
+          Text: "FORGE"
+          FontAsset {
+            Id: 1953844252455219690
+          }
+          Color {
+            R: 0.4
+            A: 1
+          }
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:center"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
         Id: 8961814113379567885
         Name: "ServerContext"
         Transform {
@@ -13610,6 +13760,7 @@ Assets {
         }
         ParentId: 11336574312508859973
         ChildIds: 7365138007100062872
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -13995,6 +14146,15 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_ui_buzzer_error_denied_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1953844252455219690
+      Name: "Londrina Solid Black"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "LondrinaSolidBlack_ref"
       }
     }
     PrimaryAssetId {

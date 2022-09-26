@@ -259,6 +259,7 @@ Assets {
         ChildIds: 9424501745837097969
         ChildIds: 2459135613465207357
         ChildIds: 13908447877385279772
+        ChildIds: 14694018902732905849
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13470,6 +13471,68 @@ Assets {
             Physics {
               Mass: 100
               LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 14694018902732905849
+        Name: "Lava"
+        Transform {
+          Location {
+            X: -473.533569
+            Y: -467.908203
+            Z: 250
+          }
+          Rotation {
+          }
+          Scale {
+            X: 50
+            Y: 53.8467178
+            Z: 1
+          }
+        }
+        ParentId: 16822779034834388573
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2434350148202011567
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
             }
             BoundsScale: 1
           }

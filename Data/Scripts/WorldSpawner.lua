@@ -6,7 +6,8 @@ local TILE_BRIDGE = script:GetCustomProperty("TileBridge")
 local TAVERN_BEGIN = script:GetCustomProperty("TavernBegin"):WaitForObject()
 local TILE_COUNTER = script:GetCustomProperty("TileCounter")
 local SPAWN_POINT = script:GetCustomProperty("SpawnPoint"):WaitForObject()
-local CANNON = script:GetCustomProperty("Cannon")
+--local CANNON = script:GetCustomProperty("Cannon")
+--local FORGE = script:GetCustomProperty("Forge")
 local REVIVE_PLAYER_TRIGGER = script:GetCustomProperty("RevivePlayerTrigger")
 
 local tiles = {TILE_2, TILE_3, TILE_4, TILE_BRIDGE}
@@ -57,12 +58,20 @@ local function CheckIfReached(trigger, other)
     end
 
     --Adds in cannon shots!
-    if trigger:GetWorldPosition().y > 8500 and (trigger.parent.name ~= "Tile4" or trigger.parent.name ~= "TileBridge") then
-        if math.random(3) > 2 then
-        World.SpawnAsset(CANNON, {position = trigger.parent:GetWorldPosition()})
-        print("Spawned cannon!")
-        end
-    end
+    --if trigger:GetWorldPosition().y > 8500 and (trigger.parent.name ~= "Tile4" or trigger.parent.name ~= "TileBridge") then
+        --if math.random(3) > 2 then
+        --World.SpawnAsset(CANNON, {position = trigger.parent:GetWorldPosition()})
+        --print("Spawned cannon!")
+        --end
+    --end
+    
+    --if trigger:GetWorldPosition().y > 8500 and (trigger.parent.name ~= "Tile4" or trigger.parent.name ~= "TileBridge") then
+        --if math.random(10) == 10 then
+        --forge = World.SpawnAsset(FORGE, {position = trigger.parent:GetWorldPosition(), rotation = Rotation.New(0,0,0)})
+        --forge.parent = trigger.parent
+        --print("Spawned forge!")
+        --end
+    --end
 
     --Only adds tiles when player is 2 tiles away or so
     if not Object.IsValid(trigger) then trigger.beginOverlapEvent:Disconnect() return end
