@@ -100,6 +100,7 @@ function UpdatePlayerLevel(player)
     if nextLevel ~= currentLevel then
         player:SetResource(LEVEL_RESOURCE, nextLevel)
         SetNewMaxHealth(player)
+        Events.BroadcastToPlayer(player, "LevelUp")
     end
 end
 

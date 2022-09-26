@@ -19,7 +19,7 @@ Objects {
     Overrides {
       Name: "cs:ZombieOtherLegs1"
       AssetReference {
-        Id: 841534158063459245
+        Id: 4070802008370054344
       }
     }
     Overrides {
@@ -115,7 +115,7 @@ Objects {
     Overrides {
       Name: "cs:ZombieUnarmedBro"
       AssetReference {
-        Id: 841534158063459245
+        Id: 4070802008370054344
       }
     }
     Overrides {
@@ -138,7 +138,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Difficulty"
-      Float: 2
+      Float: 5
     }
     Overrides {
       Name: "cs:Rarity"

@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10908084052378142536
+  Name: "Combo Achievement Warm Synth Stingers Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_stinger_combo_achievement_warm_synth_01_ref"
+  }
+}
+Assets {
   Id: 10529508212603507516
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
@@ -197,12 +206,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7013142015326271220
+  Name: "Abstract Shape 01"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Core_UI_AbstractPack_Shape_001"
+  }
+}
+Assets {
   Id: 6724534832103276994
   Name: "BG Flat 006"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
+  Id: 6695090712103048865
+  Name: "Abstract Background 01"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Core_UI_AbstractPack_Background_001"
   }
 }
 Assets {
@@ -260,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2758148575892497723
+  Name: "UI Gradient Rectangular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_002"
+  }
+}
+Assets {
   Id: 2415841006913938941
   Name: "Teko"
   PlatformAssetType: 28
@@ -275,6 +311,15 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "LondrinaSolidBlack_ref"
+  }
+}
+Assets {
+  Id: 1329284246019864136
+  Name: "Military Frame 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Frame_006"
   }
 }
 Assets {
