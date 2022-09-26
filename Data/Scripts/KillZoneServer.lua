@@ -23,6 +23,10 @@ local KILL_TRIGGER = script:GetCustomProperty("KillTrigger"):WaitForObject()
 function OnBeginOverlap(trigger, other)
     if other:IsA("Player") then
         other:Die()
+        other.respawnMode = RespawnMode.AT_CLOSEST_SPAWN_POINT
+        Task.Wait(3)
+        other:Spawn()
+        other.respawnMode = RespawnMode.NONE
     end
 end
 

@@ -32,6 +32,8 @@ Objects {
   ChildIds: 12247445592303755033
   ChildIds: 15820842136081307138
   ChildIds: 355143839912970472
+  ChildIds: 11201063072307680457
+  ChildIds: 9061294557451748907
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -49,6 +51,81 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 9061294557451748907
+  Name: "RevivePlayerTrigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14741612358210716979
+      value {
+        Overrides {
+          Name: "Name"
+          String: "RevivePlayerTrigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 100
+            Y: -1300
+            Z: 50
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9991877115737228409
+    }
+  }
+}
+Objects {
+  Id: 11201063072307680457
+  Name: "Damageable Crate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17362084410087563431
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Damageable Crate"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 167.726227
+            Y: 1400.14062
+            Z: 50
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4427146193053970916
+    }
+  }
 }
 Objects {
   Id: 355143839912970472
@@ -11996,6 +12073,12 @@ Objects {
         Id: 17088460486782063104
       }
     }
+    Overrides {
+      Name: "cs:RevivePlayerTrigger"
+      AssetReference {
+        Id: 9991877115737228409
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14693,7 +14776,7 @@ Objects {
     RespawnSettings {
       RespawnDelay: 2
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:atclosestspawnpoint"
+        Value: "mc:erespawnmode:none"
       }
       StartSpawned: true
       SpawnMode {

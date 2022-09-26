@@ -7,6 +7,7 @@ local TAVERN_BEGIN = script:GetCustomProperty("TavernBegin"):WaitForObject()
 local TILE_COUNTER = script:GetCustomProperty("TileCounter")
 local SPAWN_POINT = script:GetCustomProperty("SpawnPoint"):WaitForObject()
 local CANNON = script:GetCustomProperty("Cannon")
+local REVIVE_PLAYER_TRIGGER = script:GetCustomProperty("RevivePlayerTrigger")
 
 local tiles = {TILE_2, TILE_3, TILE_4, TILE_BRIDGE}
 local DistanceTileReached = 0
@@ -48,6 +49,13 @@ local function AddTiles(trigger)
 end
 
 local function CheckIfReached(trigger, other)
+    --revives any dead players
+    for i, player in pairs(Game.GetPlayers()) do
+        if player.isDead then
+            player:Spawn()
+        end
+    end
+
     --Adds in cannon shots!
     if trigger:GetWorldPosition().y > 8500 and (trigger.parent.name ~= "Tile4" or trigger.parent.name ~= "TileBridge") then
         if math.random(3) > 2 then
@@ -87,8 +95,14 @@ local function InitialSpawn()
 end
 
 local function RestartGame()
-    for i, tile in ipairs(TilesOnMap) do tile:Destroy() end
-    SPAWN_POINT:SetWorldPosition(Vector3.New(0, 0, 0))
+    for i, tile in ipairs(TilesOnMap) do 
+        if Object.IsValid(tile) then
+        tile:Destroy() end end
+    for i, player in pairs(Game.GetPlayers()) do
+        player:SetWorldPosition(Vector3.New(0, 0, 0))
+        player:Spawn()
+    end
+    SPAWN_POINT:SetWorldPosition(Vector3.New(0, 0, 200))
     local DistanceTileReached = 0
     local TilesOnMap = {}
     local LatestTileSpawned = nil
@@ -96,6 +110,45 @@ local function RestartGame()
     InitialSpawn()
 end
 
+local function Revive(player)
+    local total = #Game.GetPlayers()
+    local numberDead = 0
+    if numberDead >= total then
+        player:SetWorldPosition(Vector3.New(0, 0, 200))
+        RestartGame()
+        return
+    else
+        local trigger = World.SpawnAsset(REVIVE_PLAYER_TRIGGER, {position = player:GetWorldPosition()})
+        trigger:SetCustomProperty("playerId", player.id)
+        print("revive?")
+    end
+
+    local coins = player:GetResource("Coins")
+    player:SetResource("Coins", math.floor(coins * 0.9))
+
+    for i, player in pairs(Game.GetPlayers()) do
+        if player.isDead then
+            numberDead = numberDead + 1
+        end
+    end
+
+    if numberDead >= total then
+        RestartGame()
+        return
+    else
+        local trigger = World.SpawnAsset(REVIVE_PLAYER_TRIGGER, {position = player:GetWorldPosition()})
+        trigger:SetCustomProperty("playerId", player.id)
+        print("revive?")
+    end
+end
+
+function ConnectListeners(player)
+    player.diedEvent:Connect(Revive) -- handler params: (Player_player, Damage_damage)
+    print(player, "connected died event")
+end
+
 InitialSpawn()
 Events.Connect("NewTileOverlapped", CheckIfReached)
 Events.Connect("RestartGame", RestartGame)
+
+Game.playerJoinedEvent:Connect(ConnectListeners) -- handler params: (Player_player)
