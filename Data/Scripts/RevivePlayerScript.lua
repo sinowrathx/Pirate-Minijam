@@ -7,7 +7,12 @@ local reviveState = 0
 function OnInteracted(trigger, other)
 	if other:IsA("Player") then
 		if reviveState == 3 then
+            if deadPlayer ~= nil then
             deadPlayer:Spawn()
+            print("revived a player!!")
+            end
+            trigger.isInteractable = false
+            TRIGGER:Destroy()
         elseif reviveState == 2 then
             reviveState = 3
             trigger.interactionLabel = "1!!"

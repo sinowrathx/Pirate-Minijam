@@ -15,7 +15,7 @@ local DistanceTileReached = 0
 local TilesOnMap = {}
 local AllTriggers = {}
 local LatestTileSpawned = nil
-local MoveableSpawnPoint = nil
+--local MoveableSpawnPoint = nil
 
 local function GetRandomNumber()
     local number = (math.random(#tiles))
@@ -75,8 +75,8 @@ local function CheckIfReached(trigger, other)
 
     --Only adds tiles when player is 2 tiles away or so
     if not Object.IsValid(trigger) then trigger.beginOverlapEvent:Disconnect() return end
-    print(DistanceTileReached, trigger:GetWorldPosition().y, "check if reached")
-    SPAWN_POINT:SetWorldPosition(trigger:GetWorldPosition() + Vector3.New(0, 400, -100))
+        print(DistanceTileReached, trigger:GetWorldPosition().y, "check if reached")
+        SPAWN_POINT:SetWorldPosition(trigger:GetWorldPosition() + Vector3.New(0, 400, -100))
 	if trigger:GetWorldPosition().y > DistanceTileReached + 2500 and trigger:GetWorldPosition().y > 8500 then
         DistanceTileReached = trigger:GetWorldPosition().y
         print(DistanceTileReached, "Add Tiles, reached dist")
@@ -85,6 +85,7 @@ local function CheckIfReached(trigger, other)
 end
 
 local function InitialSpawn()
+
     --spawns the first 3 map segments, and triggers for each one
     local random = GetRandomNumber()
     local SpawnedSection = World.SpawnAsset(tiles[random], {position = (TAVERN_BEGIN:GetWorldPosition() + Vector3.New(0, 5000, 0))})
@@ -104,36 +105,28 @@ local function InitialSpawn()
 end
 
 local function RestartGame()
+    print("restart game")
+    SPAWN_POINT:SetWorldPosition(Vector3.New(0, 0, 200))
+    DistanceTileReached = 0
+    LatestTileSpawned = nil
+    --MoveableSpawnPoint = nil
+
     for i, tile in ipairs(TilesOnMap) do 
         if Object.IsValid(tile) then
         tile:Destroy() end end
     for i, player in pairs(Game.GetPlayers()) do
-        player:SetWorldPosition(Vector3.New(0, 0, 0))
+        player:SetWorldPosition(Vector3.New(0, 0, 200))
         player:Spawn()
+        print("player spawned??")
     end
-    SPAWN_POINT:SetWorldPosition(Vector3.New(0, 0, 200))
-    local DistanceTileReached = 0
-    local TilesOnMap = {}
-    local LatestTileSpawned = nil
-    local MoveableSpawnPoint = nil
+
+    TilesOnMap = {}
     InitialSpawn()
 end
 
 local function Revive(player)
     local total = #Game.GetPlayers()
     local numberDead = 0
-    if numberDead >= total then
-        player:SetWorldPosition(Vector3.New(0, 0, 200))
-        RestartGame()
-        return
-    else
-        local trigger = World.SpawnAsset(REVIVE_PLAYER_TRIGGER, {position = player:GetWorldPosition()})
-        trigger:SetCustomProperty("playerId", player.id)
-        print("revive?")
-    end
-
-    local coins = player:GetResource("Coins")
-    player:SetResource("Coins", math.floor(coins * 0.9))
 
     for i, player in pairs(Game.GetPlayers()) do
         if player.isDead then
@@ -142,13 +135,26 @@ local function Revive(player)
     end
 
     if numberDead >= total then
+        player:SetWorldPosition(SPAWN_POINT:GetWorldPosition())
         RestartGame()
         return
     else
         local trigger = World.SpawnAsset(REVIVE_PLAYER_TRIGGER, {position = player:GetWorldPosition()})
         trigger:SetCustomProperty("playerId", player.id)
-        print("revive?")
+        print("try to revive player")
     end
+
+    local coins = player:GetResource("Coins")
+    player:SetResource("Coins", math.floor(coins * 0.9))
+
+    --[[if numberDead >= total then
+        RestartGame()
+        return
+    else
+        local trigger = World.SpawnAsset(REVIVE_PLAYER_TRIGGER, {position = player:GetWorldPosition()})
+        trigger:SetCustomProperty("playerId", player.id)
+        print("revive? B")
+    end]]--
 end
 
 function ConnectListeners(player)

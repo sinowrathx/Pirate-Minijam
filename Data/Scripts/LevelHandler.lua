@@ -9,7 +9,7 @@ local SFX = script:GetCustomProperty("SFX"):WaitForObject() ---@type SmartAudio
 UI_PANEL.opacity = 0
 
 function Show()
-	if PLAYER:GetResource("Level") == 1 then return end
+	if PLAYER:GetResource("Level") == 1 or currentLevel == nil then return end
 	if PLAYER:GetResource("Level") > currentLevel then
 	Level = PLAYER:GetResource("Level")
 	isShowing = true

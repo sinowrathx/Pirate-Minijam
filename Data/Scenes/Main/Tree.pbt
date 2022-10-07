@@ -34,7 +34,7 @@ Objects {
   ChildIds: 12247445592303755033
   ChildIds: 15820842136081307138
   ChildIds: 355143839912970472
-  ChildIds: 9061294557451748907
+  ChildIds: 3870906737943470100
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -54,8 +54,8 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 9061294557451748907
-  Name: "RevivePlayerTrigger"
+  Id: 3870906737943470100
+  Name: "Pirate Costume Equipment"
   Transform {
     Scale {
       X: 1
@@ -67,29 +67,24 @@ Objects {
   WantsNetworking: true
   TemplateInstance {
     ParameterOverrideMap {
-      key: 14741612358210716979
+      key: 14120931003496148155
       value {
         Overrides {
           Name: "Name"
-          String: "RevivePlayerTrigger"
+          String: "Pirate Costume Equipment"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 100
-            Y: -1300
-            Z: 50
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: -500
+            Y: 700
+            Z: 100
           }
         }
       }
     }
     TemplateAsset {
-      Id: 9991877115737228409
+      Id: 2520388701754638176
     }
   }
 }

@@ -27,7 +27,9 @@ end
 function OnEndOverlap(whichTrigger, player)
 	if LOCAL_PLAYER:IsA("Player") and not TRIGGER:IsOverlapping(LOCAL_PLAYER) then
 		TRIGGER.isInteractable = true
+		if UICONTAINER:IsValid() == true then
 		UICONTAINER.visibility = Visibility.FORCE_OFF
+		end
 		forgeable = false
 		SWORD_GEO.visibility = Visibility.FORCE_OFF
 	end
